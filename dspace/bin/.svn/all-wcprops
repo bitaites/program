@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin
+END
+dspace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/dspace
+END
+buildpath.bat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/buildpath.bat
+END
+log-reporter
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/log-reporter
+END
+dspace-info.pl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/dspace-info.pl
+END
+dspace.bat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/dspace.bat
+END
+dspace_migrate
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/dspace_migrate
+END
+make-handle-config
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/make-handle-config
+END
+start-handle-server
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/bin/start-handle-server
+END

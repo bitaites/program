@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/purl/sword/server
+END
+DummyServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/purl/sword/server/DummyServer.java
+END
+AtomDocumentServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/purl/sword/server/AtomDocumentServlet.java
+END
+ServiceDocumentServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/purl/sword/server/ServiceDocumentServlet.java
+END
+SWORDServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/purl/sword/server/SWORDServer.java
+END
+DepositServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/purl/sword/server/DepositServlet.java
+END

@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit
+END
+cancel.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/cancel.jsp
+END
+thesis-removed-workaround.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/thesis-removed-workaround.jsp
+END
+show-uploaded-file.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/show-uploaded-file.jsp
+END
+progressbar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/progressbar.jsp
+END
+sample-step.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/sample-step.jsp
+END
+verify-prune.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/verify-prune.jsp
+END
+choose-file.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/choose-file.jsp
+END
+virus-error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/virus-error.jsp
+END
+show-license.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/show-license.jsp
+END
+review.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/review.jsp
+END
+virus-checker-error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/virus-checker-error.jsp
+END
+review-init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/review-init.jsp
+END
+saved.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/saved.jsp
+END
+edit-metadata.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/edit-metadata.jsp
+END
+no-theses.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/no-theses.jsp
+END
+license-rejected.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/license-rejected.jsp
+END
+cc-license.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/cc-license.jsp
+END
+creative-commons.css
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/creative-commons.css
+END
+complete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/complete.jsp
+END
+select-collection.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/select-collection.jsp
+END
+cancelled-removed.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/cancelled-removed.jsp
+END
+upload-file-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/upload-file-list.jsp
+END
+creative-commons.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/creative-commons.jsp
+END
+upload-error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/upload-error.jsp
+END
+review-metadata.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/review-metadata.jsp
+END
+sample-review.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/sample-review.jsp
+END
+initial-questions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/initial-questions.jsp
+END
+get-file-format.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/get-file-format.jsp
+END
+change-file-description.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/change-file-description.jsp
+END
+review-upload.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/submit/review-upload.jsp
+END

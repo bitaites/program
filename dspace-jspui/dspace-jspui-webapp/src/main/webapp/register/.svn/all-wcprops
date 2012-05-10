@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register
+END
+profile-updated.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/profile-updated.jsp
+END
+password-token-sent.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/password-token-sent.jsp
+END
+password-changed.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/password-changed.jsp
+END
+new-password.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/new-password.jsp
+END
+inactive-account.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/inactive-account.jsp
+END
+registered.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/registered.jsp
+END
+forgot-password.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/forgot-password.jsp
+END
+profile-form.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/profile-form.jsp
+END
+invalid-token.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/invalid-token.jsp
+END
+cannot-register.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/cannot-register.jsp
+END
+new-user.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/new-user.jsp
+END
+registration-form.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/registration-form.jsp
+END
+already-registered.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/already-registered.jsp
+END
+registration-sent.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/registration-sent.jsp
+END
+new-ldap-user.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/new-ldap-user.jsp
+END
+edit-profile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/register/edit-profile.jsp
+END

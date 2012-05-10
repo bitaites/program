@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/browse
+END
+no-results.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/browse/no-results.jsp
+END
+single.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/browse/single.jsp
+END
+full.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/browse/full.jsp
+END

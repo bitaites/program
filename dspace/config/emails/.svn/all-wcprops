@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails
+END
+submit_reject
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/submit_reject
+END
+suggest
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/suggest
+END
+flowtask_notify
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/flowtask_notify
+END
+registration_notify
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/registration_notify
+END
+harvesting_error
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/harvesting_error
+END
+feedback
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/feedback
+END
+register
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/register
+END
+submit_archive
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/submit_archive
+END
+subscription
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/subscription
+END
+internal_error
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/internal_error
+END
+submit_task
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/submit_task
+END
+change_password
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/change_password
+END
+export_success
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/export_success
+END
+export_error
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/emails/export_error
+END

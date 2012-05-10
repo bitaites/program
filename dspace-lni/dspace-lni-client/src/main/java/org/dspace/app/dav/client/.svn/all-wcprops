@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-client/src/main/java/org/dspace/app/dav/client
+END
+LNISoapServletServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-client/src/main/java/org/dspace/app/dav/client/LNISoapServletServiceLocator.java
+END
+LNIClientUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-client/src/main/java/org/dspace/app/dav/client/LNIClientUtils.java
+END
+LNISoapServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-client/src/main/java/org/dspace/app/dav/client/LNISoapServlet.java
+END
+LNISoapServletService.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-client/src/main/java/org/dspace/app/dav/client/LNISoapServletService.java
+END
+LNIRemoteException.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-client/src/main/java/org/dspace/app/dav/client/LNIRemoteException.java
+END
+DSpaceLNISoapBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-client/src/main/java/org/dspace/app/dav/client/DSpaceLNISoapBindingStub.java
+END

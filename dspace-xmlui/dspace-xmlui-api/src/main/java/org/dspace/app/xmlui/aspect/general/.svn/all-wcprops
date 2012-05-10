@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general
+END
+HandleMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/HandleMatcher.java
+END
+NotModifiedAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/NotModifiedAction.java
+END
+HandleTypeMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/HandleTypeMatcher.java
+END
+IfModifiedSinceSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/IfModifiedSinceSelector.java
+END
+AuthenticatedSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/AuthenticatedSelector.java
+END
+NoticeTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/NoticeTransformer.java
+END
+ChoiceLookupTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/ChoiceLookupTransformer.java
+END
+PageNotFoundTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/PageNotFoundTransformer.java
+END
+HandleAuthorizedMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/general/HandleAuthorizedMatcher.java
+END

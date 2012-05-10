@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools
+END
+eperson-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/eperson-list.jsp
+END
+itemmap-info.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/itemmap-info.jsp
+END
+confirm-delete-collection.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/confirm-delete-collection.jsp
+END
+confirm-delete-item.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/confirm-delete-item.jsp
+END
+itemmap-browse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/itemmap-browse.jsp
+END
+creative-commons-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/creative-commons-edit.jsp
+END
+move-item.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/move-item.jsp
+END
+group-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/group-list.jsp
+END
+get-item-id.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/get-item-id.jsp
+END
+edit-community.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/edit-community.jsp
+END
+lookup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/lookup.jsp
+END
+upload-bitstream.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/upload-bitstream.jsp
+END
+itemmap-main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/itemmap-main.jsp
+END
+edit-collection.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/edit-collection.jsp
+END
+group-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/group-edit.jsp
+END
+confirm-delete-community.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/confirm-delete-community.jsp
+END
+confirm-withdraw-item.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/confirm-withdraw-item.jsp
+END
+group-select-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/group-select-list.jsp
+END
+edit-item-form.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/tools/edit-item-form.jsp
+END

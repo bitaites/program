@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration
+END
+DiscoveryConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoveryConfiguration.java
+END
+DiscoveryRecentSubmissionsConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoveryRecentSubmissionsConfiguration.java
+END
+DiscoveryConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoveryConfigurationService.java
+END
+DiscoverySpringLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoverySpringLoader.java
+END
+DiscoveryConfigurationParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoveryConfigurationParameters.java
+END
+DiscoverySearchFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoverySearchFilter.java
+END
+SidebarFacetConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/SidebarFacetConfiguration.java
+END
+DiscoverySortConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoverySortConfiguration.java
+END
+DiscoverySortFieldConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/configuration/DiscoverySortFieldConfiguration.java
+END

@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2
+END
+CollectionListManagerDSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/CollectionListManagerDSpace.java
+END
+SwordStatementDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordStatementDisseminator.java
+END
+SwordConfigurationDSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordConfigurationDSpace.java
+END
+DepositResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/DepositResult.java
+END
+CommunityCollectionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/CommunityCollectionGenerator.java
+END
+SwordDisseminatorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordDisseminatorFactory.java
+END
+SimpleZipContentIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SimpleZipContentIngester.java
+END
+DSpaceUriRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/DSpaceUriRegistry.java
+END
+WorkflowManagerDefault.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/WorkflowManagerDefault.java
+END
+SwordUrlManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordUrlManager.java
+END
+AbstractSwordContentIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/AbstractSwordContentIngester.java
+END
+FeedContentDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/FeedContentDisseminator.java
+END
+VersionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/VersionManager.java
+END
+AtomCollectionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/AtomCollectionGenerator.java
+END
+SwordMETSContentIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordMETSContentIngester.java
+END
+ContainerManagerDSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/ContainerManagerDSpace.java
+END
+DSpaceSwordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/DSpaceSwordException.java
+END
+WorkflowManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/WorkflowManagerFactory.java
+END
+TempFileInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/TempFileInputStream.java
+END
+SwordEntryDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordEntryDisseminator.java
+END
+ReceiptGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/ReceiptGenerator.java
+END
+MediaResourceManagerDSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/MediaResourceManagerDSpace.java
+END
+SwordContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordContext.java
+END
+SimpleDCEntryDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SimpleDCEntryDisseminator.java
+END
+WorkflowManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/WorkflowManager.java
+END
+AtomStatementDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/AtomStatementDisseminator.java
+END
+DSpaceSwordAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/DSpaceSwordAPI.java
+END
+VerboseDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/VerboseDescription.java
+END
+ServiceDocumentManagerDSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/ServiceDocumentManagerDSpace.java
+END
+SwordContentDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordContentDisseminator.java
+END
+CollectionCollectionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/CollectionCollectionGenerator.java
+END
+StatementManagerDSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/StatementManagerDSpace.java
+END
+BinaryContentIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/BinaryContentIngester.java
+END
+SwordEntryIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordEntryIngester.java
+END
+SimpleDCEntryIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SimpleDCEntryIngester.java
+END
+GenericStatementDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/GenericStatementDisseminator.java
+END
+SwordIngesterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordIngesterFactory.java
+END
+SwordAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordAuthenticator.java
+END
+SimpleZipContentDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SimpleZipContentDisseminator.java
+END
+SwordContentIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/SwordContentIngester.java
+END
+WorkflowTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/WorkflowTools.java
+END
+OreStatementDisseminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/OreStatementDisseminator.java
+END
+CollectionDepositManagerDSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-swordv2/src/main/java/org/dspace/sword2/CollectionDepositManagerDSpace.java
+END

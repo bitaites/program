@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter
+END
+PDFFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/PDFFilter.java
+END
+MediaFilterManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/MediaFilterManager.java
+END
+WordFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/WordFilter.java
+END
+MediaFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/MediaFilter.java
+END
+Brand.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/Brand.java
+END
+XPDF2Thumbnail.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/XPDF2Thumbnail.java
+END
+XPDF2Text.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/XPDF2Text.java
+END
+HTMLFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/HTMLFilter.java
+END
+SelfRegisterInputFormats.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/SelfRegisterInputFormats.java
+END
+BrandText.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/BrandText.java
+END
+JPEGFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/JPEGFilter.java
+END
+PowerPointFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/PowerPointFilter.java
+END
+BrandedPreviewJPEGFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/BrandedPreviewJPEGFilter.java
+END
+FormatFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/mediafilter/FormatFilter.java
+END

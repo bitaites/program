@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks
+END
+mods-submission.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/mods-submission.xsl
+END
+QDC.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/QDC.properties
+END
+sword-swap-ingest.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/sword-swap-ingest.xsl
+END
+xhtml-head-item.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/xhtml-head-item.properties
+END
+google-metadata.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/google-metadata.properties
+END
+oaidc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/oaidc.properties
+END
+DIM2MARC21slim.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/DIM2MARC21slim.xsl
+END
+sample-crosswalk-DIM2DC.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/sample-crosswalk-DIM2DC.xsl
+END
+mods.properties
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/crosswalks/mods.properties
+END

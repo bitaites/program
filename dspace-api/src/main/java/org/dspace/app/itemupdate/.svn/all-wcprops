@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate
+END
+DeleteBitstreamsByFilterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/DeleteBitstreamsByFilterAction.java
+END
+ItemArchive.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/ItemArchive.java
+END
+BitstreamFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/BitstreamFilter.java
+END
+ItemUpdate.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/ItemUpdate.java
+END
+DeleteMetadataAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/DeleteMetadataAction.java
+END
+ThumbnailBitstreamFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/ThumbnailBitstreamFilter.java
+END
+ActionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/ActionManager.java
+END
+MetadataUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/MetadataUtilities.java
+END
+UpdateBitstreamsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/UpdateBitstreamsAction.java
+END
+ContentsEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/ContentsEntry.java
+END
+BitstreamFilterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/BitstreamFilterException.java
+END
+UpdateAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/UpdateAction.java
+END
+UpdateMetadataAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/UpdateMetadataAction.java
+END
+AddBitstreamsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/AddBitstreamsAction.java
+END
+OriginalBitstreamFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/OriginalBitstreamFilter.java
+END
+BitstreamFilterByBundleName.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/BitstreamFilterByBundleName.java
+END
+DtoMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/DtoMetadata.java
+END
+AddMetadataAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/AddMetadataAction.java
+END
+OriginalWithDerivativesBitstreamFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/OriginalWithDerivativesBitstreamFilter.java
+END
+DerivativeTextBitstreamFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/DerivativeTextBitstreamFilter.java
+END
+BitstreamFilterByFilename.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/BitstreamFilterByFilename.java
+END
+DeleteBitstreamsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/app/itemupdate/DeleteBitstreamsAction.java
+END

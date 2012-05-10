@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 94
+work
+*.ipr
+*.iws
+.classpath
+.tomcatplugin
+*.iml
+.project
+target
+build
+nbactions.xml
+.settings
+
+END

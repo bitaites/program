@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/statistics
+END
+Navigation.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/statistics/Navigation.java
+END
+StatisticsAuthorizedMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/statistics/StatisticsAuthorizedMatcher.java
+END
+StatisticsTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/statistics/StatisticsTransformer.java
+END

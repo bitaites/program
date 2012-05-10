@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries
+END
+DeleteMetadataSchemaConfirm.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/DeleteMetadataSchemaConfirm.java
+END
+FormatRegistryMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/FormatRegistryMain.java
+END
+DeleteBitstreamFormatsConfirm.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/DeleteBitstreamFormatsConfirm.java
+END
+EditMetadataSchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/EditMetadataSchema.java
+END
+DeleteMetadataFieldsConfirm.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/DeleteMetadataFieldsConfirm.java
+END
+EditBitstreamFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/EditBitstreamFormat.java
+END
+MetadataRegistryMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/MetadataRegistryMain.java
+END
+MoveMetadataFields.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/registries/MoveMetadataFields.java
+END

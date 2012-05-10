@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 83
+work
+*.ipr
+*.iws
+.classpath
+.tomcatplugin
+.project
+target
+overlays
+build
+.settings
+
+END

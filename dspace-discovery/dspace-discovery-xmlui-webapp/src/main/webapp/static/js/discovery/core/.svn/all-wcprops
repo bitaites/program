@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-webapp/src/main/webapp/static/js/discovery/core
+END
+AbstractWidget.js
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-webapp/src/main/webapp/static/js/discovery/core/AbstractWidget.js
+END
+Core.js
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-webapp/src/main/webapp/static/js/discovery/core/Core.js
+END
+AbstractFacetWidget.js
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-webapp/src/main/webapp/static/js/discovery/core/AbstractFacetWidget.js
+END
+ParameterStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-webapp/src/main/webapp/static/js/discovery/core/ParameterStore.js
+END
+AbstractManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-webapp/src/main/webapp/static/js/discovery/core/AbstractManager.js
+END
+Parameter.js
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-webapp/src/main/webapp/static/js/discovery/core/Parameter.js
+END

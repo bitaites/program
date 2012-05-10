@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Kubrick/lib/xsl
+END
+date.day-in-month.template.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Kubrick/lib/xsl/date.day-in-month.template.xsl
+END
+date.year.template.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Kubrick/lib/xsl/date.year.template.xsl
+END
+date.month-name.template.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Kubrick/lib/xsl/date.month-name.template.xsl
+END

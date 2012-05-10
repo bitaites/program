@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/workflow
+END
+WorkflowManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/workflow/WorkflowManager.java
+END
+WorkflowItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/workflow/WorkflowItem.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/workflow/package.html
+END

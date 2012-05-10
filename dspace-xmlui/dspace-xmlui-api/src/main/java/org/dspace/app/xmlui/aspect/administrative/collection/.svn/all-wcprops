@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection
+END
+EditCollectionHarvestingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/EditCollectionHarvestingForm.java
+END
+CreateCollectionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/CreateCollectionForm.java
+END
+CurateCollectionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/CurateCollectionForm.java
+END
+AssignCollectionRoles.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/AssignCollectionRoles.java
+END
+EditCollectionMetadataForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/EditCollectionMetadataForm.java
+END
+SetupCollectionHarvestingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/SetupCollectionHarvestingForm.java
+END
+DeleteCollectionConfirm.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/DeleteCollectionConfirm.java
+END
+ToggleCollectionHarvestingForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/ToggleCollectionHarvestingForm.java
+END
+DeleteCollectionRoleConfirm.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/administrative/collection/DeleteCollectionRoleConfirm.java
+END

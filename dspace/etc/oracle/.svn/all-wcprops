@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle
+END
+database_schema_17-18.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema_17-18.sql
+END
+ORACLE_README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/ORACLE_README.txt
+END
+database_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema.sql
+END
+database_schema_12-13.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema_12-13.sql
+END
+database_schema_13-14.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema_13-14.sql
+END
+update-sequences.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/update-sequences.sql
+END
+updateseq.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/updateseq.sql
+END
+database_schema_14-142.sql
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema_14-142.sql
+END
+database_schema_142-15.sql
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema_142-15.sql
+END
+database_schema_15-16.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema_15-16.sql
+END
+database_schema_16-17.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/database_schema_16-17.sql
+END

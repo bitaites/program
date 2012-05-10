@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/actions/processingaction
+END
+ReviewAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/actions/processingaction/ReviewAction.java
+END
+AcceptEditRejectAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/actions/processingaction/AcceptEditRejectAction.java
+END
+SingleUserReviewAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/actions/processingaction/SingleUserReviewAction.java
+END
+SelectReviewerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/actions/processingaction/SelectReviewerAction.java
+END
+ScoreReviewAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/actions/processingaction/ScoreReviewAction.java
+END
+FinalEditAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/actions/processingaction/FinalEditAction.java
+END

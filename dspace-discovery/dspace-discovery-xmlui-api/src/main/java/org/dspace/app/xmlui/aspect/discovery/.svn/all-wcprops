@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery
+END
+Navigation.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/Navigation.java
+END
+SimpleSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/SimpleSearch.java
+END
+CollectionSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/CollectionSearch.java
+END
+RelatedItems.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/RelatedItems.java
+END
+SidebarFacetsTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/SidebarFacetsTransformer.java
+END
+AbstractRecentSubmissionTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/AbstractRecentSubmissionTransformer.java
+END
+BrowseFacet.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/BrowseFacet.java
+END
+CommunityRecentSubmissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/CommunityRecentSubmissions.java
+END
+SiteRecentSubmissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/SiteRecentSubmissions.java
+END
+SiteViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/SiteViewer.java
+END
+AbstractSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/AbstractSearch.java
+END
+CommunitySearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/CommunitySearch.java
+END
+CollectionRecentSubmissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/CollectionRecentSubmissions.java
+END
+SearchFacetFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/discovery/SearchFacetFilter.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser
+END
+community-list.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/community-list.xsl
+END
+collection-list.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/collection-list.xsl
+END
+item-view.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/item-view.xsl
+END
+item-list.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/Mirage/lib/xsl/aspect/artifactbrowser/item-list.xsl
+END

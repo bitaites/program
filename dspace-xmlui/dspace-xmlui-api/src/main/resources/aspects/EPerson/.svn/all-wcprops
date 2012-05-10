@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/resources/aspects/EPerson
+END
+eperson.js
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/resources/aspects/EPerson/eperson.js
+END
+sitemap.xmap
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/resources/aspects/EPerson/sitemap.xmap
+END
+shibbLoginFailure.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/resources/aspects/EPerson/shibbLoginFailure.xml
+END
+noAuthMethod.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/resources/aspects/EPerson/noAuthMethod.xml
+END

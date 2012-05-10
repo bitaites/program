@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules
+END
+authentication-x509.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/authentication-x509.cfg
+END
+curate.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/curate.cfg
+END
+authentication-ip.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/authentication-ip.cfg
+END
+fetchccdata.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/fetchccdata.cfg
+END
+translator.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/translator.cfg
+END
+authentication-ldap.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/authentication-ldap.cfg
+END
+authentication-shibboleth.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/authentication-shibboleth.cfg
+END
+spring.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/spring.cfg
+END
+sword-server.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/sword-server.cfg
+END
+clamav.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/clamav.cfg
+END
+bulkedit.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/bulkedit.cfg
+END
+solr-statistics.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/solr-statistics.cfg
+END
+discovery.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/discovery.cfg
+END
+oai.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/oai.cfg
+END
+sword-client.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/sword-client.cfg
+END
+swordv2-server.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/swordv2-server.cfg
+END
+workflow.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/workflow.cfg
+END
+submission-curation.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/submission-curation.cfg
+END
+authentication.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/authentication.cfg
+END
+authentication-password.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/modules/authentication-password.cfg
+END

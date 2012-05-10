@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms
+END
+DatabaseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms/DatabaseManager.java
+END
+TableRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms/TableRow.java
+END
+InitializeDatabase.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms/InitializeDatabase.java
+END
+ColumnInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms/ColumnInfo.java
+END
+TableRowIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms/TableRowIterator.java
+END
+DataSourceInit.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms/DataSourceInit.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/storage/rdbms/package.html
+END

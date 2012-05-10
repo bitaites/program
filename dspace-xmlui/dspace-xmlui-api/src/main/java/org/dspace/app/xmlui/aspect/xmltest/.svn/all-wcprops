@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmltest
+END
+Navigation.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmltest/Navigation.java
+END
+StructureTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmltest/StructureTest.java
+END
+InlineFormTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmltest/InlineFormTest.java
+END
+HTMLTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmltest/HTMLTest.java
+END
+BasicFormTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmltest/BasicFormTest.java
+END
+AdvancedFormTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmltest/AdvancedFormTest.java
+END

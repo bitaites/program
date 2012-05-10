@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo
+END
+EmbargoLifter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo/EmbargoLifter.java
+END
+EmbargoSetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo/EmbargoSetter.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo/package-info.java
+END
+DefaultEmbargoLifter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo/DefaultEmbargoLifter.java
+END
+EmbargoManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo/EmbargoManager.java
+END
+DefaultEmbargoSetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo/DefaultEmbargoSetter.java
+END
+DayTableEmbargoSetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/embargo/DayTableEmbargoSetter.java
+END

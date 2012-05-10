@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon
+END
+HttpServletRequestCocoonWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/HttpServletRequestCocoonWrapper.java
+END
+DSpaceMETSGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpaceMETSGenerator.java
+END
+UsageLoggerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/UsageLoggerAction.java
+END
+MetadataExportReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/MetadataExportReader.java
+END
+AbstractDSpaceTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/AbstractDSpaceTransformer.java
+END
+ThemeMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/ThemeMatcher.java
+END
+OpenURLReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/OpenURLReader.java
+END
+PropertyFileReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/PropertyFileReader.java
+END
+ConcatenationReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/ConcatenationReader.java
+END
+ItemExportDownloadReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/ItemExportDownloadReader.java
+END
+DSpaceCocoonServletFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpaceCocoonServletFilter.java
+END
+DSpaceOREGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpaceOREGenerator.java
+END
+DSpaceLocaleAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpaceLocaleAction.java
+END
+BitstreamReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/BitstreamReader.java
+END
+StylesheetInstructionTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/StylesheetInstructionTransformer.java
+END
+AJAXMenuGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/AJAXMenuGenerator.java
+END
+DSpaceTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpaceTransformer.java
+END
+DSpaceI18NTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpaceI18NTransformer.java
+END
+AspectMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/AspectMatcher.java
+END
+NamespaceFilterTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/NamespaceFilterTransformer.java
+END
+SetCharacterEncodingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/SetCharacterEncodingFilter.java
+END
+SitemapReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/SitemapReader.java
+END
+AspectGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/AspectGenerator.java
+END
+DSpacePropertyFileReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpacePropertyFileReader.java
+END
+DSpaceFeedGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/DSpaceFeedGenerator.java
+END
+OpenSearchGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/cocoon/OpenSearchGenerator.java
+END

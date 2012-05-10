@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error
+END
+404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error/404.jsp
+END
+authorize.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error/authorize.jsp
+END
+internal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error/internal.jsp
+END
+require-certificate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error/require-certificate.jsp
+END
+exceeded-size.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error/exceeded-size.jsp
+END
+integrity.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error/integrity.jsp
+END
+invalid-id.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/error/invalid-id.jsp
+END

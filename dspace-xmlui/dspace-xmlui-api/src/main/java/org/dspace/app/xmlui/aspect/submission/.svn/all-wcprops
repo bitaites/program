@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission
+END
+AbstractStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/AbstractStep.java
+END
+Navigation.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/Navigation.java
+END
+FlowUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/FlowUtils.java
+END
+AbstractSubmissionStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/AbstractSubmissionStep.java
+END
+StepAndPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/StepAndPage.java
+END
+CollectionViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/CollectionViewer.java
+END
+StepTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/StepTransformer.java
+END
+Submissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/submission/Submissions.java
+END

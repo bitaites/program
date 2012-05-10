@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml
+END
+MODS-Handler.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/MODS-Handler.xsl
+END
+QDC-Handler.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/QDC-Handler.xsl
+END
+DIM-Handler.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/DIM-Handler.xsl
+END
+General-Handler.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/General-Handler.xsl
+END
+structural.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/structural.xsl
+END

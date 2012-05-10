@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login
+END
+no-valid-cert.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/no-valid-cert.jsp
+END
+ldap-incorrect.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/ldap-incorrect.jsp
+END
+logged-out.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/logged-out.jsp
+END
+incorrect.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/incorrect.jsp
+END
+no-single-sign-out.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/no-single-sign-out.jsp
+END
+ldap.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/ldap.jsp
+END
+no-email.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/no-email.jsp
+END
+chooser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/chooser.jsp
+END
+password.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/password.jsp
+END
+not-in-records.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/login/not-in-records.jsp
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/xmlworkflow
+END
+workflow_migration.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/xmlworkflow/workflow_migration.sql
+END
+xml_workflow.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/oracle/xmlworkflow/xml_workflow.sql
+END

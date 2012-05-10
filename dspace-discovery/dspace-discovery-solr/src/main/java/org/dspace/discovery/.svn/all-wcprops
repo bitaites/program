@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-solr/src/main/java/org/dspace/discovery
+END
+SolrServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-solr/src/main/java/org/dspace/discovery/SolrServiceImpl.java
+END
+SolrServiceIndexPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-solr/src/main/java/org/dspace/discovery/SolrServiceIndexPlugin.java
+END
+SolrServiceIndexOutputPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-solr/src/main/java/org/dspace/discovery/SolrServiceIndexOutputPlugin.java
+END

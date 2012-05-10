@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step
+END
+InitialQuestionsStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/InitialQuestionsStep.java
+END
+UploadStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/UploadStep.java
+END
+VerifyStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/VerifyStep.java
+END
+CCLicenseStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/CCLicenseStep.java
+END
+CompleteStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/CompleteStep.java
+END
+SelectCollectionStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/SelectCollectionStep.java
+END
+SkipInitialQuestionsStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/SkipInitialQuestionsStep.java
+END
+DescribeStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/DescribeStep.java
+END
+SampleStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/SampleStep.java
+END
+LicenseStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/submit/step/LicenseStep.java
+END

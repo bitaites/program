@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres
+END
+database_schema_17-18.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema_17-18.sql
+END
+database_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema.sql
+END
+database_schema_11-12.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema_11-12.sql
+END
+database_schema_12-13.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema_12-13.sql
+END
+database_schema_13-14.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema_13-14.sql
+END
+database_schema_14-15.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema_14-15.sql
+END
+update-sequences.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/update-sequences.sql
+END
+database_schema_15-16.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema_15-16.sql
+END
+database_schema_16-17.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/postgres/database_schema_16-17.sql
+END

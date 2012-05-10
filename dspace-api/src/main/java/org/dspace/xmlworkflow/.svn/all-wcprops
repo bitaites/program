@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/Role.java
+END
+WorkflowConfigurationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/WorkflowConfigurationException.java
+END
+WorkflowFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/WorkflowFactory.java
+END
+XmlWorkflowManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/XmlWorkflowManager.java
+END
+WorkflowException.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/WorkflowException.java
+END
+WorkflowRequirementsManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/WorkflowRequirementsManager.java
+END
+WorkflowUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/WorkflowUtils.java
+END
+RoleMembers.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/RoleMembers.java
+END

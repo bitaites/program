@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element
+END
+Password.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Password.java
+END
+AbstractWingElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/AbstractWingElement.java
+END
+WingDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/WingDocument.java
+END
+Data.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Data.java
+END
+List.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/List.java
+END
+File.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/File.java
+END
+Figure.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Figure.java
+END
+Params.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Params.java
+END
+Para.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Para.java
+END
+PageMeta.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/PageMeta.java
+END
+Field.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Field.java
+END
+Text.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Text.java
+END
+UserMeta.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/UserMeta.java
+END
+Meta.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Meta.java
+END
+Table.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Table.java
+END
+TextContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/TextContainer.java
+END
+Options.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Options.java
+END
+Body.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Body.java
+END
+Radio.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Radio.java
+END
+Head.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Head.java
+END
+Composite.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Composite.java
+END
+SimpleHTMLFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/SimpleHTMLFragment.java
+END
+Instance.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Instance.java
+END
+Xref.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Xref.java
+END
+Highlight.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Highlight.java
+END
+Row.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Row.java
+END
+Option.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Option.java
+END
+ReferenceSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/ReferenceSet.java
+END
+Button.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Button.java
+END
+Trail.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Trail.java
+END
+Value.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Value.java
+END
+TextArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/TextArea.java
+END
+WingElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/WingElement.java
+END
+Label.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Label.java
+END
+Cell.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Cell.java
+END
+Select.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Select.java
+END
+Metadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Metadata.java
+END
+Container.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Container.java
+END
+StructuralElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/StructuralElement.java
+END
+WingMergeableElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/WingMergeableElement.java
+END
+Division.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Division.java
+END
+CheckBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/CheckBox.java
+END
+RepositoryMeta.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/RepositoryMeta.java
+END
+Help.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Help.java
+END
+Error.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Error.java
+END
+MetadataElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/MetadataElement.java
+END
+Hidden.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Hidden.java
+END
+RichTextContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/RichTextContainer.java
+END
+Reference.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Reference.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-wing/src/main/java/org/dspace/app/xmlui/wing/element/Item.java
+END

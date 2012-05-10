@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai
+END
+METSCrosswalk.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/METSCrosswalk.java
+END
+DSpaceOAICatalog.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/DSpaceOAICatalog.java
+END
+RDFCrosswalk.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/RDFCrosswalk.java
+END
+DIDLCrosswalk.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/DIDLCrosswalk.java
+END
+DSpaceRecordFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/DSpaceRecordFactory.java
+END
+PluginCrosswalk.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/PluginCrosswalk.java
+END
+OAIDCCrosswalk.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/OAIDCCrosswalk.java
+END
+UKETDDCCrosswalk.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/UKETDDCCrosswalk.java
+END
+LoadDSpaceOAIConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-oai/dspace-oai-api/src/main/java/org/dspace/app/oai/LoadDSpaceOAIConfig.java
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/Utils.java
+END
+ScriptedTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/ScriptedTask.java
+END
+Suspendable.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/Suspendable.java
+END
+ResolvedTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/ResolvedTask.java
+END
+TaskQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/TaskQueue.java
+END
+FileTaskQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/FileTaskQueue.java
+END
+CurationTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/CurationTask.java
+END
+WorkflowCurator.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/WorkflowCurator.java
+END
+CurationCli.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/CurationCli.java
+END
+Distributive.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/Distributive.java
+END
+Curator.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/Curator.java
+END
+TaskResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/TaskResolver.java
+END
+TaskQueueEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/TaskQueueEntry.java
+END
+AbstractCurationTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/AbstractCurationTask.java
+END
+Mutative.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/curate/Mutative.java
+END

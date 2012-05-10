@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet
+END
+StatisticsServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/StatisticsServlet.java
+END
+SitemapServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/SitemapServlet.java
+END
+MyDSpaceServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/MyDSpaceServlet.java
+END
+AbstractBrowserServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/AbstractBrowserServlet.java
+END
+ViewWorkspaceItemServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/ViewWorkspaceItemServlet.java
+END
+LogoutServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/LogoutServlet.java
+END
+LoadDSpaceConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/LoadDSpaceConfig.java
+END
+LDAPServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/LDAPServlet.java
+END
+CommunityListServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/CommunityListServlet.java
+END
+DisplayStatisticsServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/DisplayStatisticsServlet.java
+END
+SuggestServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/SuggestServlet.java
+END
+ShibbolethServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/ShibbolethServlet.java
+END
+ControlledVocabularySearchServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/ControlledVocabularySearchServlet.java
+END
+OpenURLServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/OpenURLServlet.java
+END
+FeedbackServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/FeedbackServlet.java
+END
+InternalErrorServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/InternalErrorServlet.java
+END
+OpenSearchServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/OpenSearchServlet.java
+END
+BitstreamServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/BitstreamServlet.java
+END
+SubmissionController.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/SubmissionController.java
+END
+AdvancedSearchServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/AdvancedSearchServlet.java
+END
+HandleServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/HandleServlet.java
+END
+ControlledVocabularyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/ControlledVocabularyServlet.java
+END
+WorkspaceServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/WorkspaceServlet.java
+END
+DSpaceServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/DSpaceServlet.java
+END
+PasswordServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/PasswordServlet.java
+END
+ItemExportArchiveServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/ItemExportArchiveServlet.java
+END
+FeedServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/FeedServlet.java
+END
+HTMLServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/HTMLServlet.java
+END
+EditProfileServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/EditProfileServlet.java
+END
+X509CertificateServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/X509CertificateServlet.java
+END
+MetadataImportServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/MetadataImportServlet.java
+END
+SimpleSearchServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/SimpleSearchServlet.java
+END
+SubscribeServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/SubscribeServlet.java
+END
+MetadataExportServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/MetadataExportServlet.java
+END
+BrowserServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/BrowserServlet.java
+END
+RegisterServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/RegisterServlet.java
+END
+RetrieveServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/RetrieveServlet.java
+END
+AuthorityChooseServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/servlet/AuthorityChooseServlet.java
+END

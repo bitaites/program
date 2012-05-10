@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules
+END
+authentication-x509.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/authentication-x509.cfg
+END
+bulkedit.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/bulkedit.cfg
+END
+authentication-ip.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/authentication-ip.cfg
+END
+workflow.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/workflow.cfg
+END
+authentication-ldap.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/authentication-ldap.cfg
+END
+authentication-password.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/authentication-password.cfg
+END
+authentication.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/authentication.cfg
+END
+authentication-shibboleth.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/modules/authentication-shibboleth.cfg
+END

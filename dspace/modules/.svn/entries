@@ -1,0 +1,83 @@
+10
+
+dir
+6957
+https://scm.dspace.org/svn/repo/dspace/tags/dspace-1.8.2/dspace/modules
+https://scm.dspace.org/svn/repo
+
+
+
+2012-02-24T16:26:46.571516Z
+6954
+tdonohue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+9c30dcfa-912a-0410-8fc2-9e0234be79fd
+
+solr
+dir
+
+lni
+dir
+
+swordv2
+dir
+
+oai
+dir
+
+jspui
+dir
+
+pom.xml
+file
+
+
+
+
+2012-03-05T16:28:07.750561Z
+da0c8e08b4255abe78c4222737b55723
+2012-02-24T16:26:46.571516Z
+6954
+tdonohue
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3367
+
+sword
+dir
+
+xmlui
+dir
+

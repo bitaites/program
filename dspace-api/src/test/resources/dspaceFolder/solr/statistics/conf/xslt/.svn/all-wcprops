@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/solr/statistics/conf/xslt
+END
+example.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/solr/statistics/conf/xslt/example.xsl
+END
+example_atom.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/solr/statistics/conf/xslt/example_atom.xsl
+END
+luke.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/solr/statistics/conf/xslt/luke.xsl
+END
+example_rss.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/solr/statistics/conf/xslt/example_rss.xsl
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/filter
+END
+StatisticsFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/filter/StatisticsFilter.java
+END
+StatisticsSolrDateFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/filter/StatisticsSolrDateFilter.java
+END

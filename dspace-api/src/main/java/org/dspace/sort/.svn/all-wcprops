@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort
+END
+OrderFormatDelegate.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/OrderFormatDelegate.java
+END
+SortOption.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/SortOption.java
+END
+OrderFormatDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/OrderFormatDate.java
+END
+OrderFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/OrderFormat.java
+END
+OrderFormatTitle.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/OrderFormatTitle.java
+END
+SortException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/SortException.java
+END
+AbstractTextFilterOFD.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/AbstractTextFilterOFD.java
+END
+OrderFormatAuthor.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/OrderFormatAuthor.java
+END
+OrderFormatText.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/OrderFormatText.java
+END
+OrderFormatTitleMarc21.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/sort/OrderFormatTitleMarc21.java
+END

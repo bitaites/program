@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin
+END
+list-formats.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/list-formats.jsp
+END
+authorize-collection-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/authorize-collection-edit.jsp
+END
+authorize-item-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/authorize-item-edit.jsp
+END
+authorize-main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/authorize-main.jsp
+END
+list-metadata-fields.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/list-metadata-fields.jsp
+END
+eperson-main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/eperson-main.jsp
+END
+eperson-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/eperson-edit.jsp
+END
+confirm-delete-mdfield.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/confirm-delete-mdfield.jsp
+END
+community-select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/community-select.jsp
+END
+metadataimport-error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/metadataimport-error.jsp
+END
+group-group-select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/group-group-select.jsp
+END
+license-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/license-edit.jsp
+END
+eperson-confirm-delete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/eperson-confirm-delete.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/index.jsp
+END
+collection-select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/collection-select.jsp
+END
+wizard-permissions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/wizard-permissions.jsp
+END
+list-metadata-schemas.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/list-metadata-schemas.jsp
+END
+workflow-abort-confirm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/workflow-abort-confirm.jsp
+END
+item-select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/item-select.jsp
+END
+confirm-delete-mdschema.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/confirm-delete-mdschema.jsp
+END
+authorize-advanced.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/authorize-advanced.jsp
+END
+metadataimport-showchanges.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/metadataimport-showchanges.jsp
+END
+confirm-delete-format.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/confirm-delete-format.jsp
+END
+group-confirm-delete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/group-confirm-delete.jsp
+END
+wizard-questions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/wizard-questions.jsp
+END
+authorize-policy-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/authorize-policy-edit.jsp
+END
+wizard-basicinfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/wizard-basicinfo.jsp
+END
+supervise-duplicate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/supervise-duplicate.jsp
+END
+news-main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/news-main.jsp
+END
+supervise-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/supervise-list.jsp
+END
+news-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/news-edit.jsp
+END
+eperson-deletion-error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/eperson-deletion-error.jsp
+END
+supervise-main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/supervise-main.jsp
+END
+eperson-browse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/eperson-browse.jsp
+END
+supervise-confirm-remove.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/supervise-confirm-remove.jsp
+END
+metadataimport.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/metadataimport.jsp
+END
+wizard-default-item.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/wizard-default-item.jsp
+END
+authorize-community-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/authorize-community-edit.jsp
+END
+supervise-link.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/supervise-link.jsp
+END
+group-eperson-select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/group-eperson-select.jsp
+END
+upload-logo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/upload-logo.jsp
+END
+workflow-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-webapp/src/main/webapp/dspace-admin/workflow-list.jsp
+END

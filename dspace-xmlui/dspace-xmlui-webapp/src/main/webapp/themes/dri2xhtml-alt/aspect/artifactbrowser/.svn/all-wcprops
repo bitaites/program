@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser
+END
+COinS.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/COinS.xsl
+END
+community-view.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/community-view.xsl
+END
+community-list.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/community-list.xsl
+END
+artifactbrowser.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/artifactbrowser.xsl
+END
+collection-view.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/collection-view.xsl
+END
+collection-list.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/collection-list.xsl
+END
+ORE.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/ORE.xsl
+END
+item-view.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/item-view.xsl
+END
+item-list.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/item-list.xsl
+END
+common.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml-alt/aspect/artifactbrowser/common.xsl
+END

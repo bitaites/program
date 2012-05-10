@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/state/actions
+END
+UserSelectionActionConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/state/actions/UserSelectionActionConfig.java
+END
+ActionResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/state/actions/ActionResult.java
+END
+Action.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/state/actions/Action.java
+END
+ActionInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/state/actions/ActionInterface.java
+END
+WorkflowActionConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/xmlworkflow/state/actions/WorkflowActionConfig.java
+END

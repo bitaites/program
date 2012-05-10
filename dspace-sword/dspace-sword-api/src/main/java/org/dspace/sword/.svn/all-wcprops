@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword
+END
+SWORDIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDIngester.java
+END
+DepositManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/DepositManager.java
+END
+DSpaceATOMEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/DSpaceATOMEntry.java
+END
+SWORDContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDContext.java
+END
+DSpaceSWORDServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/DSpaceSWORDServer.java
+END
+DepositResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/DepositResult.java
+END
+DSpaceSWORDErrorCodes.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/DSpaceSWORDErrorCodes.java
+END
+CommunityCollectionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/CommunityCollectionGenerator.java
+END
+Depositor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/Depositor.java
+END
+SWORDProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDProperties.java
+END
+SWORDUrlManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDUrlManager.java
+END
+CollectionCollectionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/CollectionCollectionGenerator.java
+END
+SWORDService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDService.java
+END
+ItemCollectionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/ItemCollectionGenerator.java
+END
+BitstreamEntryGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/BitstreamEntryGenerator.java
+END
+ATOMCollectionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/ATOMCollectionGenerator.java
+END
+CollectionLocation.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/CollectionLocation.java
+END
+CollectionDepositor.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/CollectionDepositor.java
+END
+LoadDSpaceConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/LoadDSpaceConfig.java
+END
+SWORDConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDConfiguration.java
+END
+ItemEntryGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/ItemEntryGenerator.java
+END
+ItemDepositor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/ItemDepositor.java
+END
+SWORDIngesterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDIngesterFactory.java
+END
+SWORDMETSIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDMETSIngester.java
+END
+SWORDAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDAuthenticator.java
+END
+ServiceDocumentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/ServiceDocumentManager.java
+END
+SimpleFileIngester.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SimpleFileIngester.java
+END
+MediaEntryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/MediaEntryManager.java
+END
+DSpaceSWORDException.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/DSpaceSWORDException.java
+END
+SWORDAuthentication.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword/dspace-sword-api/src/main/java/org/dspace/sword/SWORDAuthentication.java
+END

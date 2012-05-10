@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content
+END
+StatisticsBSAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/StatisticsBSAdapter.java
+END
+StatisticsDisplay.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/StatisticsDisplay.java
+END
+StatisticsTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/StatisticsTable.java
+END
+DatasetDSpaceObjectGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/DatasetDSpaceObjectGenerator.java
+END
+StatisticsData.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/StatisticsData.java
+END
+StatisticsListing.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/StatisticsListing.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/package-info.java
+END
+StatisticsDataVisits.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/StatisticsDataVisits.java
+END
+DSORepresentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/DSORepresentation.java
+END
+DatasetTimeGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/DatasetTimeGenerator.java
+END
+DatasetGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/DatasetGenerator.java
+END
+DatasetTypeGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/content/DatasetTypeGenerator.java
+END

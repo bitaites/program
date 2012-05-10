@@ -1,0 +1,106 @@
+10
+
+dir
+6957
+https://scm.dspace.org/svn/repo/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace
+https://scm.dspace.org/svn/repo
+
+
+
+2012-02-20T22:00:19.332664Z
+6948
+tdonohue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9c30dcfa-912a-0410-8fc2-9e0234be79fd
+
+app
+dir
+
+event
+dir
+
+license
+dir
+
+curate
+dir
+
+text
+dir
+
+sort
+dir
+
+core
+dir
+
+handle
+dir
+
+xmlworkflow
+dir
+
+plugin
+dir
+
+administer
+dir
+
+browse
+dir
+
+submit
+dir
+
+storage
+dir
+
+usage
+dir
+
+checker
+dir
+
+ctask
+dir
+
+search
+dir
+
+content
+dir
+
+authorize
+dir
+
+workflow
+dir
+
+eperson
+dir
+
+harvest
+dir
+
+embargo
+dir
+
+testing
+dir
+
+authenticate
+dir
+

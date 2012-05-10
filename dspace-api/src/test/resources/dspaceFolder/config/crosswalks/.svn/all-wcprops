@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks
+END
+mods-submission.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks/mods-submission.xsl
+END
+QDC.properties
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks/QDC.properties
+END
+sword-swap-ingest.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks/sword-swap-ingest.xsl
+END
+xhtml-head-item.properties
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks/xhtml-head-item.properties
+END
+oaidc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks/oaidc.properties
+END
+sample-crosswalk-DIM2DC.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks/sample-crosswalk-DIM2DC.xsl
+END
+mods.properties
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/crosswalks/mods.properties
+END

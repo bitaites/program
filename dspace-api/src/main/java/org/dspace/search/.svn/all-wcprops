@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search
+END
+HarvestedItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/HarvestedItemInfo.java
+END
+DSTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/DSTokenizer.java
+END
+SearchConsumer.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/SearchConsumer.java
+END
+QueryArgs.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/QueryArgs.java
+END
+DSIndexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/DSIndexer.java
+END
+QueryResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/QueryResults.java
+END
+IndexingTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/IndexingTask.java
+END
+DSNonStemmingAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/DSNonStemmingAnalyzer.java
+END
+DSAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/DSAnalyzer.java
+END
+DSQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/DSQuery.java
+END
+Harvest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/Harvest.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/search/package.html
+END

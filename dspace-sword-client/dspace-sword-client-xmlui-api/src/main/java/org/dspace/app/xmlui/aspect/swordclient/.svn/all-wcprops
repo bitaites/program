@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient
+END
+Navigation.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/Navigation.java
+END
+SwordResponseTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/SwordResponseTransformer.java
+END
+SelectPackagingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/SelectPackagingAction.java
+END
+SelectTargetAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/SelectTargetAction.java
+END
+DepositAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/DepositAction.java
+END
+SelectPackagingTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/SelectPackagingTransformer.java
+END
+SelectCollectionAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/SelectCollectionAction.java
+END
+SelectTargetTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/SelectTargetTransformer.java
+END
+SelectCollectionTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-sword-client/dspace-sword-client-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/swordclient/SelectCollectionTransformer.java
+END

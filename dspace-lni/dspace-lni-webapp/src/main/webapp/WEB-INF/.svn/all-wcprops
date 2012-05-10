@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-webapp/src/main/webapp/WEB-INF
+END
+server-config.wsdd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-webapp/src/main/webapp/WEB-INF/server-config.wsdd
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-lni/dspace-lni-webapp/src/main/webapp/WEB-INF/web.xml
+END

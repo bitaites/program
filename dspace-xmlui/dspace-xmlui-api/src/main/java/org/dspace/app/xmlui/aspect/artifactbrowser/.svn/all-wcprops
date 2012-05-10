@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser
+END
+Navigation.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/Navigation.java
+END
+CommunityViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CommunityViewer.java
+END
+FeedbackForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/FeedbackForm.java
+END
+CommunitySearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CommunitySearch.java
+END
+FrontPageSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/FrontPageSearch.java
+END
+StatisticsViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/StatisticsViewer.java
+END
+CollectionViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CollectionViewer.java
+END
+FeedbackSent.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/FeedbackSent.java
+END
+SimpleSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/SimpleSearch.java
+END
+ItemViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ItemViewer.java
+END
+CollectionSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CollectionSearch.java
+END
+ConfigurableBrowse.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/ConfigurableBrowse.java
+END
+CommunityRecentSubmissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CommunityRecentSubmissions.java
+END
+RestrictedItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/RestrictedItem.java
+END
+CommunityBrowser.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CommunityBrowser.java
+END
+AbstractSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/AbstractSearch.java
+END
+Contact.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/Contact.java
+END
+CollectionRecentSubmissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/CollectionRecentSubmissions.java
+END
+AdvancedSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/AdvancedSearch.java
+END
+SendFeedbackAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/SendFeedbackAction.java
+END

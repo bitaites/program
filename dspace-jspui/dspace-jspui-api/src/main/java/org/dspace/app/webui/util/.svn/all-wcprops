@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util
+END
+AKeyBasedStyleSelection.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/AKeyBasedStyleSelection.java
+END
+CollectionStyleSelection.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/CollectionStyleSelection.java
+END
+RequestInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/RequestInfo.java
+END
+StyleSelection.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/StyleSelection.java
+END
+JSPManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/JSPManager.java
+END
+MetadataStyleSelection.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/MetadataStyleSelection.java
+END
+UIUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/UIUtil.java
+END
+FileUploadRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/FileUploadRequest.java
+END
+Authenticate.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/Authenticate.java
+END
+XMLUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/util/XMLUtil.java
+END

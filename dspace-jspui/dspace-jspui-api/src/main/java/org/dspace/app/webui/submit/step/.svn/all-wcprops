@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step
+END
+JSPCCLicenseStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPCCLicenseStep.java
+END
+JSPCompleteStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPCompleteStep.java
+END
+JSPSelectCollectionStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPSelectCollectionStep.java
+END
+JSPDescribeStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPDescribeStep.java
+END
+JSPSampleStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPSampleStep.java
+END
+JSPLicenseStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPLicenseStep.java
+END
+JSPInitialQuestionsStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPInitialQuestionsStep.java
+END
+JSPUploadStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPUploadStep.java
+END
+JSPVerifyStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/submit/step/JSPVerifyStep.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery
+END
+DiscoverQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/DiscoverQuery.java
+END
+DiscoverFacetField.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/DiscoverFacetField.java
+END
+IndexEventConsumer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/IndexEventConsumer.java
+END
+SearchServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/SearchServiceException.java
+END
+IndexClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/IndexClient.java
+END
+IndexingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/IndexingService.java
+END
+SearchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/SearchService.java
+END
+SearchUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/SearchUtils.java
+END
+DiscoverFilterQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/DiscoverFilterQuery.java
+END
+DiscoverResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-discovery/dspace-discovery-provider/src/main/java/org/dspace/discovery/DiscoverResult.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc
+END
+clean-database.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/clean-database.sql
+END
+dspace-jacobe.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/etc/dspace-jacobe.cfg
+END

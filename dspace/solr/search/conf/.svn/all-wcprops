@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf
+END
+schema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/schema.xml
+END
+protwords.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/protwords.txt
+END
+stopwords.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/stopwords.txt
+END
+elevate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/elevate.xml
+END
+solrconfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/solrconfig.xml
+END
+admin-extra.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/admin-extra.html
+END
+synonyms.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/synonyms.txt
+END
+spellings.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/solr/search/conf/spellings.txt
+END

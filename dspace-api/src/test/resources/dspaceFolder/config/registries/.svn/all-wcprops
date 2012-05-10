@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/registries
+END
+bitstream-formats.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/registries/bitstream-formats.xml
+END
+dublin-core-types.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/registries/dublin-core-types.xml
+END
+sword-metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspaceFolder/config/registries/sword-metadata.xml
+END

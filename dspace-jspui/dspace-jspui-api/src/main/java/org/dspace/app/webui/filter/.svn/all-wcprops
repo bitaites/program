@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/filter
+END
+AdminOnlyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/filter/AdminOnlyFilter.java
+END
+RegisteredOnlyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/filter/RegisteredOnlyFilter.java
+END
+ShibbolethFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-jspui/dspace-jspui-api/src/main/java/org/dspace/app/webui/filter/ShibbolethFilter.java
+END

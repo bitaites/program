@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources
+END
+database_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/database_schema.sql
+END
+dspace-test.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/dspace-test.cfg
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/log4j.properties
+END
+test-config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/resources/test-config.properties
+END

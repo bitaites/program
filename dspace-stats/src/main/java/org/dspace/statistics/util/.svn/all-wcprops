@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util
+END
+IPTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/IPTable.java
+END
+SpiderDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/SpiderDetector.java
+END
+LocationUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/LocationUtils.java
+END
+StatisticsClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/StatisticsClient.java
+END
+ClassicDSpaceLogConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/ClassicDSpaceLogConverter.java
+END
+StatisticsDataGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/StatisticsDataGenerator.java
+END
+ApacheLogRobotsProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/ApacheLogRobotsProcessor.java
+END
+StatisticsImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/StatisticsImporter.java
+END
+DnsLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-stats/src/main/java/org/dspace/statistics/util/DnsLookup.java
+END

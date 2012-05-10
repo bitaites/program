@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content
+END
+MetadataSchemaTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/MetadataSchemaTest.java
+END
+NonUniqueMetadataExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/NonUniqueMetadataExceptionTest.java
+END
+BitstreamFormatTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/BitstreamFormatTest.java
+END
+LicenseUtilsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/LicenseUtilsTest.java
+END
+CommunityCollectionIntegrationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/CommunityCollectionIntegrationTest.java
+END
+SiteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/SiteTest.java
+END
+InProgressSubmissionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/InProgressSubmissionTest.java
+END
+ItemIteratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/ItemIteratorTest.java
+END
+SupervisedItemTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/SupervisedItemTest.java
+END
+BundleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/BundleTest.java
+END
+DCSeriesNumberTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/DCSeriesNumberTest.java
+END
+AbstractDSpaceObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/AbstractDSpaceObjectTest.java
+END
+MetadataValueTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/MetadataValueTest.java
+END
+WorkspaceItemTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/WorkspaceItemTest.java
+END
+DCPersonNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/DCPersonNameTest.java
+END
+DCValueTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/DCValueTest.java
+END
+ThumbnailTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/ThumbnailTest.java
+END
+DCDateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/DCDateTest.java
+END
+CommunityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/CommunityTest.java
+END
+MetadataFieldTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/MetadataFieldTest.java
+END
+MetadataIntegrationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/MetadataIntegrationTest.java
+END
+InstallItemTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/InstallItemTest.java
+END
+ItemComparatorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/ItemComparatorTest.java
+END
+DCLanguageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/DCLanguageTest.java
+END
+BitstreamTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/BitstreamTest.java
+END
+FormatIdentifierTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/FormatIdentifierTest.java
+END
+CollectionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/CollectionTest.java
+END
+ItemTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/test/java/org/dspace/content/ItemTest.java
+END

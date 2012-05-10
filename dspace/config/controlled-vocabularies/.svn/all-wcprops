@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/controlled-vocabularies
+END
+LICENCES
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/controlled-vocabularies/LICENCES
+END
+nsi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/controlled-vocabularies/nsi.xml
+END
+srsc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/controlled-vocabularies/srsc.xml
+END
+controlledvocabulary.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace/config/controlled-vocabularies/controlledvocabulary.xsd
+END

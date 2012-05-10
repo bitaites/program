@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/admin
+END
+ReturnToSubmitterAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/admin/ReturnToSubmitterAction.java
+END
+WorkflowOverviewTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/admin/WorkflowOverviewTransformer.java
+END
+WorkflowItemTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/admin/WorkflowItemTransformer.java
+END
+DeleteWorkflowItemsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/xmlworkflow/admin/DeleteWorkflowItemsAction.java
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson
+END
+Subscribe.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/Subscribe.java
+END
+Supervisor.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/Supervisor.java
+END
+AccountManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/AccountManager.java
+END
+EPersonConsumer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/EPersonConsumer.java
+END
+EPerson.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/EPerson.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/Group.java
+END
+EPersonDeletionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/EPersonDeletionException.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repo/!svn/ver/6955/dspace/tags/dspace-1.8.2/dspace-api/src/main/java/org/dspace/eperson/package.html
+END
