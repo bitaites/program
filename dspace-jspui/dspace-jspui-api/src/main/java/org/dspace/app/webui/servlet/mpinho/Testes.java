@@ -13,16 +13,20 @@
 
 package org.dspace.app.webui.servlet.mpinho;
 
+import com.google.common.util.concurrent.ListenableFuture;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.logging.Level;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.core.MediaType;
 
 import org.apache.log4j.Logger;
 import org.dspace.app.webui.util.JSPManager;
@@ -33,6 +37,14 @@ import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.content.crosswalk.CrosswalkException;
 import org.dspace.content.packager.PackageException;
 import org.dspace.core.LogManager;
+import org.jclouds.blobstore.AsyncBlobStore;
+import org.jclouds.blobstore.BlobStore;
+import org.jclouds.blobstore.BlobStoreContext;
+import org.jclouds.blobstore.BlobStoreContextFactory;
+import org.jclouds.blobstore.domain.Blob;
+
+import static org.jclouds.blobstore.options.PutOptions.Builder.multipart;                                                                                                                 
+
 
 
 /**
@@ -51,9 +63,57 @@ public class Testes extends DSpaceServlet
     {
         log.info(LogManager.getHeader(context, "view_testes", ""));
         
+        /*String identity = "AKIAJ7U22TYN64UZZGTA";
+        String credential = "yKOuLVYtF1i79A5r1Ab2ZkRZezu4x2LFKT93CvzE";
+        String container = "mpinho-dspace";
+        String dirCom = "com-backup/";
+        String dirCol = "col-backup/";
+        String dirIte = "ite-backup/"; */
+        
         File siteFile = null;
         String name = "Hello World";
         
+        //String identity = "AKIAJ7U22TYN64UZZGTA";
+        //String credential = "yKOuLVYtF1i79A5r1Ab2ZkRZezu4x2LFKT93CvzE";
+        
+        /*Properties overrides = new Properties();
+        overrides.setProperty("jclouds.mpu.parallel.degree", "10"); 
+        overrides.setProperty("aws-s3.identity", identity);
+        overrides.setProperty("aws-s3.credential", credential);
+    
+        try 
+        {
+            BlobStoreContext blobContext = new BlobStoreContextFactory().createContext("aws-s3", overrides);
+            
+            AsyncBlobStore blobStore = blobContext.getAsyncBlobStore();
+
+            blobStore.createContainerInLocation(null, container).get();
+         
+            blobStore.createDirectory(container, dirCom).get();
+            
+            File input = new File(new URI("file:///home/bitaites/Desktop/backupfiles/COMMUNITY123456789.zip"));
+            
+            String oi = MediaType.APPLICATION_OCTET_STREAM;
+            
+            //Blob blob = blobStore.blobBuilder("lol.zip").payload(input).contentType(container)            
+            
+            Blob blob = blobStore.blobBuilder("COMMUNITY123456789.zip").payload(input).
+                    contentType("application/zip").
+                    contentDisposition("COMMUNITY123456789.zip").build();
+            
+            ListenableFuture<String> futureETag = blobStore.putBlob(container, blob, multipart());
+            
+            //asynchronously wait for the upload                                                                                                                                                   
+            String eTag = futureETag.get(); 
+
+            blobContext.close();
+        } 
+        catch (Exception ex) 
+        {
+            String oi = "oi";
+            return;
+        }
+                
         /*Backup obj = new Backup();
         List<String> listData = obj.listAllFiles();
         List<String> listCommunities = obj.listCommunities();
