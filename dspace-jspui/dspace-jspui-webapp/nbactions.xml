@@ -8,7 +8,7 @@
             <properties>
                 <netbeans.deploy>true</netbeans.deploy>
                 
-                <dspace.config>/home/bitaites/Desktop/DSpaceBin/config/dspace.cfg</dspace.config>
+                <dspace.config>/home/bitaites/Desktop/pdis/dspace-1.8.2/dspace/target/dspace-1.8.2-build/config/dspace.cfg</dspace.config>
             </properties>
         </action>
         <action>
@@ -19,7 +19,7 @@
             <properties>
                 <netbeans.deploy>true</netbeans.deploy>
                 <netbeans.deploy.clientUrlPart>/jspui</netbeans.deploy.clientUrlPart>
-                <dspace.config>/home/bitaites/Desktop/DSpaceBin/config/dspace.cfg</dspace.config>
+                <dspace.config>/home/bitaites/Desktop/pdis/dspace-1.8.2/dspace/target/dspace-1.8.2-build/config/dspace.cfg</dspace.config>
                 <netbeans.deploy.debugmode>true</netbeans.deploy.debugmode>
             </properties>
         </action>

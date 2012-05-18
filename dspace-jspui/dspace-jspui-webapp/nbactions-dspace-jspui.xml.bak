@@ -8,7 +8,7 @@
             <properties>
                 <netbeans.deploy.debugmode>true</netbeans.deploy.debugmode>
                 <netbeans.deploy>true</netbeans.deploy>
-                <dspace.config>/home/bitaites/Desktop/DSpaceBin/config/dspace.cfg</dspace.config>
+                <dspace.config>/home/bitaites/Desktop/pdis/dspace-1.8.2/dspace/config/dspace.cfg</dspace.config>
             </properties>
         </action>
         

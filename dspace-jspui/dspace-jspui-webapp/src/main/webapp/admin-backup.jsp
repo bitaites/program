@@ -79,6 +79,12 @@
             //link to backup all
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     obj[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
+            //link to sendCloud
+            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+                    obj[i].getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
+            //link to sendCloud all
+            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+                    obj[i].getHandle() + "/all" + "\">" + "sendAllCloudAmazon" + "</a>");
             //if community contains sub-communities show them
             if(subObj.containsKey(obj[i].getID()))
             {
@@ -119,6 +125,12 @@
             //link to backup all
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     col[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
+            //link to sendCloud
+            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+                    col[i].getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
+            //link to sendCloud all
+            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+                    col[i].getHandle() + "/all" + "\">" + "sendAllCloudAmazon" + "</a>");
             //show items if collections contais
             if(items.containsKey(col[i].getID()))
                 showItems(items.get(col[i].getID()));
@@ -141,6 +153,9 @@
             //link to backup
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     newObj.getHandle() + "\">" + "backup" + "</a>");
+            //link to sendCloud
+            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+                    newObj.getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
             out.println("</li>");
         }
         out.println("</ul>");

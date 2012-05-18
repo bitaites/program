@@ -141,16 +141,6 @@
       	<type>jar</type>
       	<scope>provided</scope>
       </dependency>
-      <dependency>
-            <groupId>org.jclouds</groupId>
-            <artifactId>jclouds-allcompute</artifactId>
-            <version>1.5.0-alpha.1</version>
-    </dependency>
-    <dependency>
-            <groupId>org.jclouds</groupId>
-            <artifactId>jclouds-allblobstore</artifactId>
-            <version>1.5.0-alpha.1</version>
-    </dependency>
    </dependencies>
     <properties>
         <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>

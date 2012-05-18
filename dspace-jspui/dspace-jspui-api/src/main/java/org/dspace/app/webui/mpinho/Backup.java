@@ -30,7 +30,7 @@ public class Backup {
     
     private String path = "/home/bitaites/Desktop/backupfiles/";
     
-        /**
+    /**
     * Return the name of the files of some type.
     * 
     * @param type
@@ -70,7 +70,8 @@ public class Backup {
     }
     
     /**
-    * See if a file exists in the default path.
+    * See if a file exists in the default path and 
+    * if the MD5 of the file is correct.
     * 
     * @param name
     *            Name of the file
@@ -90,7 +91,10 @@ public class Backup {
             {
                 if(listOfFiles[i].isFile())
                     if(listOfFiles[i].getName().compareTo(name) == 0)
+                    {
+                        //TODO - see if checksum didn't changed
                         return true;
+                    }
             }
         }
         
@@ -201,7 +205,7 @@ public class Backup {
     * 
     * @return the file name
     */
-    private String getFileNameObj(DSpaceObject obj)
+    public String getFileNameObj(DSpaceObject obj)
     {
         String fileName = "";
         
@@ -470,7 +474,7 @@ public class Backup {
         //get the name of the backup file
         String filename = this.getFileNameObj(obj);
         
-        //see if backup file exists
+        //see if backup file exists and the checksum is correct
         Boolean existFile = this.existFile(filename);
         
         if(existFile == true && existLog == false)

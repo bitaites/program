@@ -11,7 +11,6 @@
  */
 package org.dspace.app.webui.servlet.mpinho;
 
-import org.dspace.app.webui.servlet.mpinho.AdminBackupServlet;
 import java.io.IOException;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
@@ -35,7 +34,7 @@ import org.dspace.handle.HandleManager;
 public class BackupServlet extends DSpaceServlet
 {
     /** log4j category */
-    private static Logger log = Logger.getLogger(AdminBackupServlet.class);
+    private static Logger log = Logger.getLogger(BackupServlet.class);
     
     protected void doDSGet(Context context, HttpServletRequest request,
             HttpServletResponse response) 
