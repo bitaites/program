@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 86
+.classpath
+.project
+.settings
+.tomcatplugin
+build
+work
+target
+*.iml
+*.ipr
+*.iws
+.idea
+
+END
