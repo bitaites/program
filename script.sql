@@ -29,6 +29,7 @@ CREATE TABLE sthanfile
 	last_backup timestamp with time zone,
 	md5 character varying(256),
 	last_sendcloud timestamp with time zone,
+	md5_sent character varying(256),
 	etag character varying(256),	
 	CONSTRAINT sthanfile_pkey PRIMARY KEY (sthanfile_id)
 );

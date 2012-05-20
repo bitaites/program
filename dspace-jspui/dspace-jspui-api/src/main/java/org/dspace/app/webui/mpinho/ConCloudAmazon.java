@@ -7,12 +7,14 @@
  */
 package org.dspace.app.webui.mpinho;
 
+import com.Ostermiller.util.MD5;
 import com.google.common.util.concurrent.ListenableFuture;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Level;
@@ -40,6 +42,27 @@ public class ConCloudAmazon {
     private String identity = "AKIAJ7U22TYN64UZZGTA";
     private String credential = "yKOuLVYtF1i79A5r1Ab2ZkRZezu4x2LFKT93CvzE";
     private String container = "mpinho-dspace";
+    
+    /**
+    * Return the MD5 of the file.
+    * 
+    * @param filename
+    *            Name of the backup file
+    * 
+    * @return the MD5 of the file
+    */
+    private String getMD5File(String filename)
+    {
+        //get MD5 of the file
+        try {
+            return MD5.getHashString(new File(this.path+filename));
+        } 
+        catch (IOException ex) 
+        {
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
+    }
     
     /**
     * Return the specific DSpaceObject.
@@ -137,7 +160,7 @@ public class ConCloudAmazon {
         }
     }
     
-    private Boolean send(String filename)
+    private Boolean send(Context context, String filename)
     {
         //set the properties of the connection
         Properties overrides = new Properties();
@@ -171,6 +194,22 @@ public class ConCloudAmazon {
         //close the cloud connection
         blobContext.close();
         
+        
+        //get the handler to be recognized in the db
+        int firstSlash = filename.indexOf('@');
+        int secondSlash = filename.indexOf('.');
+        String handler = filename.substring(firstSlash+1, secondSlash);
+        handler = handler.replace('-', '/');
+        
+        //get the correct etag
+        Etag = Etag.substring(1, Etag.length()-1);
+        
+        String md5 = this.getMD5File(filename);
+        
+        //regist the operation in the db
+        BackupProcess newRegist = new BackupProcess();
+        newRegist.updateProcessSendCloud(context, handler, md5, Etag);
+        
         return true;
     }
     
@@ -203,7 +242,7 @@ public class ConCloudAmazon {
         String filename = backup.getFileNameObj(obj);
         
         //send file to cloud
-        return this.send(filename);
+        return this.send(context, filename);
     }
     
     public Boolean sendCollection(Context context, Integer ref)
@@ -235,7 +274,7 @@ public class ConCloudAmazon {
         String filename = backup.getFileNameObj(obj);
         
         //send file to cloud
-        return this.send(filename);
+        return this.send(context, filename);
     }
     
     public Boolean sendItem(Context context, Integer ref)
@@ -267,7 +306,7 @@ public class ConCloudAmazon {
         String filename = backup.getFileNameObj(obj);
         
         //send file to cloud
-        return this.send(filename);
+        return this.send(context, filename);
     }
     
     public Boolean sendCommunityAndChilds(Context context, Integer ref)
@@ -348,7 +387,7 @@ public class ConCloudAmazon {
     }
     
     /**
-    * See if the last backup of the object is in cloud Amazon.
+    * See if the last backup done of the object is in cloud Amazon.
     * DSpace Object could be community, collection or item
     * 
     * @param context
@@ -362,8 +401,42 @@ public class ConCloudAmazon {
     */
     public Boolean sendDone(Context context, String handler)
     {   
-        //compare in xml last_backup date with last_sendcloud date
-        return false;
+        //see if exist a regist of a backup in the table sthandfile
+        BackupProcess backupProcess= new BackupProcess();
+        Boolean existRegist = backupProcess.existRegist(context, handler);
+
+        //if doesn't exist a regist return false
+        if(existRegist == false)
+            return false; 
+        
+        //get the last send cloud dat
+        Date lastSendCloud = backupProcess.getLastSendCloudDate(context, handler);
+        
+        //if doesn't exist a date relative to the last send to cloud return false
+        if(lastSendCloud == null)
+            return false;
+        
+        //get the last backup date
+        Date lastBackup = backupProcess.getLastBackupDate(context, handler);
+        
+        //verify if a new backup happened
+        if (lastSendCloud.before(lastBackup) == true)
+        {
+            //see if new md5 file backup is equal to the last md5 file backup sent to cloud
+            Boolean equalFiles = backupProcess.equalsFiles(context, handler);
+            
+            //if equal files return true
+            if (equalFiles == true)
+                return true;
+            else
+                return false;
+        }
+        else
+        {
+            //TODO - Files exists in cloud
+            //TODO - ETag is correct
+            return true;
+        }
     }
             
 }

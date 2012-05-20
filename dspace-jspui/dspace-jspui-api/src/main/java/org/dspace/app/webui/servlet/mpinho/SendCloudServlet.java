@@ -26,7 +26,8 @@ import org.dspace.core.Context;
 import org.dspace.handle.HandleManager;
 
 /**
- *
+ * Servlet to send files to amazon cloud.  
+ * 
  * @author bitaites
  */
 public class SendCloudServlet extends DSpaceServlet

@@ -7,9 +7,12 @@
  */
 package org.dspace.app.webui.mpinho;
 
+import com.Ostermiller.util.MD5;
 import java.io.File;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -29,6 +32,27 @@ import org.dspace.eperson.EPerson;
 public class Backup {
     
     private String path = "/home/bitaites/Desktop/backupfiles/";
+    
+    /**
+    * Return the MD5 of the file.
+    * 
+    * @param filename
+    *            Name of the backup file
+    * 
+    * @return the MD5 of the file
+    */
+    private String getMD5File(String filename)
+    {
+        //get MD5 of the file
+        try {
+            return MD5.getHashString(new File(this.path+filename));
+        } 
+        catch (IOException ex) 
+        {
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
+    }
     
     /**
     * Return the name of the files of some type.
@@ -70,8 +94,7 @@ public class Backup {
     }
     
     /**
-    * See if a file exists in the default path and 
-    * if the MD5 of the file is correct.
+    * See if a file exists in the default path.
     * 
     * @param name
     *            Name of the file
@@ -91,10 +114,7 @@ public class Backup {
             {
                 if(listOfFiles[i].isFile())
                     if(listOfFiles[i].getName().compareTo(name) == 0)
-                    {
-                        //TODO - see if checksum didn't changed
                         return true;
-                    }
             }
         }
         
@@ -191,8 +211,12 @@ public class Backup {
             Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        //delete logtable if exists
         Logbackup newLog = new Logbackup();
         newLog.deleteLogTable(context, ref, type);
+        
+        BackupProcess newRegist = new BackupProcess();
+        newRegist.updateProcessBackup(context, ref, type);
         
         return true;
     }
@@ -339,10 +363,16 @@ public class Backup {
     */
     public Boolean exportItem(Context context, Integer ref)
     {
-        //TODO - inserir aqui as restrições para o export
-        Boolean val = export(context, Constants.ITEM, ref);
+        //see if backup already exists
+        Boolean var = this.backupDone(context, ref, Constants.ITEM);
         
-        return val;
+        if(var == true)
+            return false;
+        else
+        {
+            Boolean val = export(context, Constants.ITEM, ref);;
+            return val;
+        }
     }
     
     /**
@@ -447,7 +477,7 @@ public class Backup {
     }
     
     /**
-    * See if the backup of a DSpaceObject is done.
+    * See if the backup of a DSpaceObject is done and correctly exists.
     * DSpace Object could be community, collection or item
     * 
     * @param context
@@ -463,24 +493,70 @@ public class Backup {
     * 
     */
     public Boolean backupDone(Context context, int ref, int type)
-    {   
-        Logbackup logb = new Logbackup();
-        //see if there is a modification registry in the db
-        Boolean existLog = logb.existsLog(context, ref, type);
-        
+    {          
+        //see if object is a community or collection
+        if(type == Constants.COMMUNITY || type == Constants.COLLECTION)
+        {
+            //see if there is a modification registry in the db
+            Logbackup logb = new Logbackup();
+            Boolean existLog = logb.existsLog(context, ref, type);
+            
+            //if modification has been detected return false
+            if (existLog == true)
+                return false;
+        }
+
         //get the DSpaceObject
         DSpaceObject obj = this.getDSpaceObject(context, type, ref);
-        
-        //get the name of the backup file
-        String filename = this.getFileNameObj(obj);
-        
-        //see if backup file exists and the checksum is correct
-        Boolean existFile = this.existFile(filename);
-        
-        if(existFile == true && existLog == false)
-            return true;
-        else
+
+        //see if exist a regist of a backup in the table sthandfile
+        BackupProcess backupProcess= new BackupProcess();
+        Boolean existRegist = backupProcess.existRegist(context, obj.getHandle());
+
+        //if doesn't exist a regist return false
+        if(existRegist == false)
             return false;
+                
+        //get filename and see if backup file exists
+        String filename = this.getFileNameObj(obj);
+        Boolean existFile = this.existFile(filename);
+
+        //if file doesn't exist return false
+        if (existFile == false)
+            return false;
+        
+        //get md5 of the local file
+        String md5File = this.getMD5File(filename);
+        //get the md5 saved int the last backup for this file
+        String md5Save = backupProcess.getSavedMD5(context, obj.getHandle());
+
+        //if the two md5 are differents return false
+        if(md5File.compareTo(md5Save) != 0)
+            return false;
+
+        if(type == Constants.ITEM)
+        {
+            //get the last modification date of the item
+            Item item = null;
+            try {
+                item = Item.find(context, ref);
+            } catch (SQLException ex) {
+                Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            Date lastModification = item.getLastModified();
+            
+            //get the last backup date
+            Date lastBackup = backupProcess.getLastBackupDate(context, obj.getHandle());
+                    
+            //see if some modification happens after a backup
+            if(lastModification.after(lastBackup) == true)
+                return false;
+            else
+                return true;
+        }
+        else
+            //backup of a community or collection is done
+            return true;  
     }
     
 }
