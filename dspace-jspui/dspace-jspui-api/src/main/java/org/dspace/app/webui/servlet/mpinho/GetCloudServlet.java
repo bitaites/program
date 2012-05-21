@@ -1,13 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  * The contents of this file are subject to the license and copyright
  * detailed in the LICENSE and NOTICE files at the root of the source
  * tree and available online at
  *
  * http://www.dspace.org/license/
+ */
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package org.dspace.app.webui.servlet.mpinho;
 
@@ -25,13 +25,13 @@ import org.dspace.core.Context;
 import org.dspace.handle.HandleManager;
 
 /**
- * Servlet to send files to amazon cloud.  
+ * Servlet to get files from amazon cloud.  
  * 
  * @author bitaites
  */
-public class SendCloudServlet extends DSpaceServlet
+public class GetCloudServlet extends DSpaceServlet
 {
-    private static Logger log = Logger.getLogger(SendCloudServlet.class);
+    private static Logger log = Logger.getLogger(GetCloudServlet.class);
     
     protected void doDSGet(Context context, HttpServletRequest request,
             HttpServletResponse response) 
@@ -62,7 +62,7 @@ public class SendCloudServlet extends DSpaceServlet
             handle = path.substring(firstSlash + 1, thirdSlash);
             extraPathInfo = path.substring(thirdSlash + 1);
             
-            if (server == null || handle == null || extraPathInfo == null)
+            if (server == null || handle == null)
                 return;
         }
         catch (NumberFormatException nfe)
@@ -81,18 +81,18 @@ public class SendCloudServlet extends DSpaceServlet
         {
             case Constants.COMMUNITY:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.sendCommunity(context, dso.getID());
+                    act.getCommunity(context, dso.getID());
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.sendCommunityAndChilds(context, dso.getID());
+                    act.getCommunityAndChilds(context, dso.getID());
                 break;
             case Constants.COLLECTION:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.sendCollection(context, dso.getID());
+                    act.getCollection(context, dso.getID());
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.sendCollectionAndChilds(context, dso.getID());
+                    act.getCollectionAndChilds(context, dso.getID());
                 break;
             case Constants.ITEM:
-                act.sendItem(context, dso.getID());
+                act.getItem(context, dso.getID());
                 break;
             default:
                 break;
@@ -100,6 +100,6 @@ public class SendCloudServlet extends DSpaceServlet
         
         //redirect to the view "admin-backup"
         String originalURL = request.getContextPath() + "/admin-backup";
-        response.sendRedirect(response.encodeRedirectURL(originalURL)); 
+        response.sendRedirect(response.encodeRedirectURL(originalURL));
     }
 }

@@ -212,6 +212,11 @@
     <servlet-name>send-cloud</servlet-name>
     <servlet-class>org.dspace.app.webui.servlet.mpinho.SendCloudServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>get-cloud</servlet-name>
+    <servlet-class>org.dspace.app.webui.servlet.mpinho.GetCloudServlet</servlet-class>
+  </servlet>
   <!-- -->
   
   <servlet>
@@ -518,6 +523,11 @@
   <servlet-mapping>
     <servlet-name>send-cloud</servlet-name>
     <url-pattern>/send-cloud/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>get-cloud</servlet-name>
+    <url-pattern>/get-cloud/*</url-pattern>
   </servlet-mapping>
   <!-- -->
 

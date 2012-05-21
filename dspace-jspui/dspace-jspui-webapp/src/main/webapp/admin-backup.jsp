@@ -85,6 +85,12 @@
             //link to sendCloud all
             out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
                     obj[i].getHandle() + "/all" + "\">" + "sendAllCloudAmazon" + "</a>");
+            //link to getCloud
+            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
+                    obj[i].getHandle() + "/this" + "\">" + "getCloudAmazon" + "</a>");
+            //link to getCloud all
+            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
+                    obj[i].getHandle() + "/all" + "\">" + "getAllCloudAmazon" + "</a>");
             //if community contains sub-communities show them
             if(subObj.containsKey(obj[i].getID()))
             {
@@ -131,6 +137,12 @@
             //link to sendCloud all
             out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
                     col[i].getHandle() + "/all" + "\">" + "sendAllCloudAmazon" + "</a>");
+            //link to getCloud
+            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
+                    col[i].getHandle() + "/this" + "\">" + "getCloudAmazon" + "</a>");
+            //link to getCloud all
+            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
+                    col[i].getHandle() + "/all" + "\">" + "getAllCloudAmazon" + "</a>");
             //show items if collections contais
             if(items.containsKey(col[i].getID()))
                 showItems(items.get(col[i].getID()));
@@ -155,7 +167,10 @@
                     newObj.getHandle() + "\">" + "backup" + "</a>");
             //link to sendCloud
             out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
-                    newObj.getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
+                    newObj.getHandle() + "\">" + "sendCloudAmazon" + "</a>");
+            //link to getCloud
+            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
+                    newObj.getHandle() + "\">" + "getCloudAmazon" + "</a>");
             out.println("</li>");
         }
         out.println("</ul>");

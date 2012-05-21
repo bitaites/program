@@ -9,8 +9,7 @@ package org.dspace.app.webui.mpinho;
 
 import com.Ostermiller.util.MD5;
 import com.google.common.util.concurrent.ListenableFuture;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.SQLException;
@@ -213,6 +212,67 @@ public class ConCloudAmazon {
         return true;
     }
     
+    private Boolean get(String filename)
+    {
+        //set the properties of the connection
+        Properties overrides = new Properties();
+        overrides.setProperty("jclouds.mpu.parallel.degree", "10"); 
+        overrides.setProperty("aws-s3.identity", this.identity);
+        overrides.setProperty("aws-s3.credential", this.credential);
+        
+        //make the connection
+        BlobStoreContext blobContext = new BlobStoreContextFactory().createContext("aws-s3", overrides);
+        
+        //define the connection type
+        AsyncBlobStore blobStore = blobContext.getAsyncBlobStore();
+        
+        //create or open the container
+        try {
+            blobStore.createContainerInLocation(null, container).get();
+        } 
+        catch (Exception ex) 
+        {
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
+            blobContext.close();
+            return false;
+        }
+        
+        //get type file
+        int firstSlash = filename.indexOf('@');
+        String fileLocation = filename.substring(0, firstSlash) + "/" + filename;
+        
+        //get the respective file
+        ListenableFuture<Blob> futureETag = blobStore.getBlob(container, fileLocation);
+        
+        //create output file
+        OutputStream out = null;
+        try {
+            out = new FileOutputStream(this.path + filename);
+        } 
+        catch (FileNotFoundException ex) 
+        {
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
+            blobContext.close();
+            return false;
+        }
+        
+        //write the file cloud to destination output
+        try {
+            futureETag.get().getPayload().writeTo(out);
+        } 
+        catch (Exception ex) 
+        {
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
+            blobContext.close();
+            return false;
+        }
+        
+        //close connection to cloud
+        blobContext.close();
+        
+        return true;
+    }
+    
     public Boolean sendCommunity(Context context, Integer ref)
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.COMMUNITY, ref);
@@ -243,6 +303,18 @@ public class ConCloudAmazon {
         
         //send file to cloud
         return this.send(context, filename);
+    }
+    
+    public Boolean getCommunity(Context context, Integer ref)
+    {
+        DSpaceObject obj = this.getDSpaceObject(context, Constants.COMMUNITY, ref);
+        
+        //get file name of the community backup
+        Backup backup = new Backup();
+        String filename = backup.getFileNameObj(obj);
+        
+        //get file from cloud
+        return this.get(filename);
     }
     
     public Boolean sendCollection(Context context, Integer ref)
@@ -277,6 +349,18 @@ public class ConCloudAmazon {
         return this.send(context, filename);
     }
     
+    public Boolean getCollection(Context context, Integer ref)
+    {
+        DSpaceObject obj = this.getDSpaceObject(context, Constants.COLLECTION, ref);
+        
+        //get file name of the community backup
+        Backup backup = new Backup();
+        String filename = backup.getFileNameObj(obj);
+        
+        //get file from cloud
+        return this.get(filename);
+    }
+    
     public Boolean sendItem(Context context, Integer ref)
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.ITEM, ref);
@@ -307,6 +391,18 @@ public class ConCloudAmazon {
         
         //send file to cloud
         return this.send(context, filename);
+    }
+    
+    public Boolean getItem(Context context, Integer ref)
+    {
+        DSpaceObject obj = this.getDSpaceObject(context, Constants.ITEM, ref);
+        
+        //get file name of the community backup
+        Backup backup = new Backup();
+        String filename = backup.getFileNameObj(obj);
+        
+        //get file from cloud
+        return this.get(filename);
     }
     
     public Boolean sendCommunityAndChilds(Context context, Integer ref)
@@ -348,6 +444,45 @@ public class ConCloudAmazon {
         return true;
     }
     
+    public Boolean getCommunityAndChilds(Context context, Integer ref)
+    {
+        //get file community from cloud
+        getCommunity(context, ref);
+        
+        Community obj;
+        Community[] subCommunities;
+        Collection[] collections;
+        
+        //get community and the respective sub-communities and childs
+        try 
+        {
+            obj = Community.find(context, ref);
+            subCommunities = obj.getSubcommunities();
+            collections = obj.getCollections();
+        } 
+        catch (Exception ex) 
+        {
+            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
+        //get from cloud all the respective files sub-communities and childs
+        if(subCommunities.length != 0)
+        {
+            for(int i=0; i<subCommunities.length; i++)
+                getCommunityAndChilds(context, subCommunities[i].getID());
+        }
+        
+        //get from cloud all files collections and childs
+        if(collections.length != 0)
+        {
+            for(int i=0; i<collections.length; i++)
+                getCollectionAndChilds(context, collections[i].getID());
+        }
+        
+        return true;
+    }
+    
     public Boolean sendCollectionAndChilds(Context context, Integer ref)
     {
         //send to cloud atual collection
@@ -375,6 +510,44 @@ public class ConCloudAmazon {
             {
                 Item newObj = items.next();
                 sendItem(context, newObj.getID());
+            }
+        } 
+        catch (Exception ex) 
+        {
+            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
+        return true;
+    }
+    
+    public Boolean getCollectionAndChilds(Context context, Integer ref)
+    {
+        //get from cloud atual collection file
+        getCollection(context, ref);
+        
+        Collection obj;
+        ItemIterator items;
+        
+        //get the items presents in the collection
+        try 
+        {
+            obj = Collection.find(context, ref);
+            items = obj.getAllItems();
+        } 
+        catch (Exception ex) 
+        {
+            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
+        //get from cloud, one by one, each item file
+        try 
+        {
+            if(items.hasNext())
+            {
+                Item newObj = items.next();
+                getItem(context, newObj.getID());
             }
         } 
         catch (Exception ex) 
