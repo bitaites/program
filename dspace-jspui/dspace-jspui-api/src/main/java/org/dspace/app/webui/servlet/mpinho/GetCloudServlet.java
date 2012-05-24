@@ -81,18 +81,18 @@ public class GetCloudServlet extends DSpaceServlet
         {
             case Constants.COMMUNITY:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.getCommunity(context, dso.getID());
+                    act.getCommunity(context, dso.getID(), true);
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.getCommunityAndChilds(context, dso.getID());
+                    act.getCommunityAndChilds(context, dso.getID(), true);
                 break;
             case Constants.COLLECTION:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.getCollection(context, dso.getID());
+                    act.getCollection(context, dso.getID(), true);
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.getCollectionAndChilds(context, dso.getID());
+                    act.getCollectionAndChilds(context, dso.getID(), true);
                 break;
             case Constants.ITEM:
-                act.getItem(context, dso.getID());
+                act.getItem(context, dso.getID(), true);
                 break;
             default:
                 break;

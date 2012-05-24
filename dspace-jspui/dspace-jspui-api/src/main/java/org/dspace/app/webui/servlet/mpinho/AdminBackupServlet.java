@@ -15,20 +15,17 @@ package org.dspace.app.webui.servlet.mpinho;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 import org.dspace.app.webui.mpinho.Backup;
+import org.dspace.app.webui.mpinho.ConCloudAmazon;
 import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.app.webui.util.JSPManager;
 import org.dspace.content.Collection;
-import org.dspace.content.Community;
-import org.dspace.content.ItemIterator;
+import org.dspace.content.*;
 import org.dspace.core.Constants;
 import org.dspace.core.Context;
 
@@ -58,6 +55,14 @@ public class AdminBackupServlet extends DSpaceServlet
         Set<Integer> backupComDone = new HashSet<Integer>();
         //This will contain all the collectionIDs with backup done
         Set<Integer> backupColDone = new HashSet<Integer>();
+        //This will contain all the itemIDs with backup done
+        Set<Integer> backupItemDone = new HashSet<Integer>();
+        //This will contain all the communityIDs with updated backup file in cloud
+        Set<Integer> cloudComExist = new HashSet<Integer>();
+        //This will contain all the collectionIDs with updated backup file in cloud
+        Set<Integer> cloudColExist = new HashSet<Integer>();
+        //This will contain all the itemIDs with updated backup file in cloud
+        Set<Integer> cloudItemExist = new HashSet<Integer>();
         
         //get top communities
         Community[] communities = Community.findAllTop(context);
@@ -65,28 +70,26 @@ public class AdminBackupServlet extends DSpaceServlet
         Community[] allCommunities = Community.findAll(context);
         
         //for all communities get sub-communities, collections and the respective items
-        //also, see wich communities and collections has backup done
+        //also, see wich collections and items has backup done
         for(int i=0; i<allCommunities.length; i++)
         {
             Integer comID = Integer.valueOf(allCommunities[i].getID());
-            
-            //see the status backup of Community
-            Backup objDis = new Backup();
-            if(objDis.backupDone(context, comID, Constants.COMMUNITY) == true)
-                backupComDone.add(comID);
             
             //get collections
             Collection[] collections = allCommunities[i].getCollections();
             if (collections.length != 0)
                 colMap.put(comID, collections);
             
+            Backup objBackup = new Backup();
+            ConCloudAmazon conCloud = new ConCloudAmazon();
+            
             //see the status backup of Collections
-            for(int j=0; j<collections.length; j++)
-            {
-                if(objDis.backupDone(context, collections[j].getID(), Constants.COLLECTION) 
-                        == true)
-                    backupColDone.add(collections[j].getID());
-            }
+            if (collections.length != 0)
+                backupColDone.addAll(objBackup.checkCollectionsBackup(context, collections));
+            
+            //see wich collections have the updated backup file in cloud
+            if (collections.length != 0)
+                cloudColExist.addAll(conCloud.checkCollectionsInCloud(context, collections));
             
             //get items
             for(int j=0; j<collections.length; j++)
@@ -94,6 +97,14 @@ public class AdminBackupServlet extends DSpaceServlet
                 ItemIterator item = collections[j].getItems();
                 if(item.hasNext())
                     itemMap.put(collections[j].getID(), item);
+                
+                //see the status backup of Items
+                if (item.hasNext())
+                    backupItemDone.addAll(objBackup.checkItemsBackup(context, item));
+                
+                //see wich items have the updated backup file in cloud
+                if (item.hasNext())
+                    cloudItemExist.addAll(conCloud.checkItemsInCloud(context, item));
             }
             
             //get sub-communities
@@ -101,6 +112,17 @@ public class AdminBackupServlet extends DSpaceServlet
             if (subCommunities.length != 0)
                 subComMap.put(comID, subCommunities);
         }
+        
+        //see the status backup of all Communities
+        Backup objBackup = new Backup();
+        if (allCommunities.length != 0)
+            backupComDone.addAll(objBackup.checkCommunitiesBackup(context, allCommunities));
+        
+        //see wich collections have the updated backup file in cloud
+        ConCloudAmazon conCloud = new ConCloudAmazon();
+        if (allCommunities.length != 0)
+            cloudComExist.addAll(conCloud.checkCommunitiesInCloud(context, allCommunities));
+            
         
         String hello = "hello";
         
@@ -112,7 +134,10 @@ public class AdminBackupServlet extends DSpaceServlet
         request.setAttribute("itemMap", itemMap);
         request.setAttribute("backupComDone", backupComDone);
         request.setAttribute("backupColDone", backupColDone);
-        
+        request.setAttribute("backupItemDone", backupItemDone);
+        request.setAttribute("cloudComExist", cloudComExist);
+        request.setAttribute("cloudColExist", cloudColExist);
+        request.setAttribute("cloudItemExist", cloudItemExist);
         JSPManager.showJSP(request, response, "/admin-backup.jsp");
     }
     

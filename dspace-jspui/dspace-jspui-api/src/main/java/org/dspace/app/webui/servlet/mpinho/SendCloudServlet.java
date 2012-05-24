@@ -81,18 +81,18 @@ public class SendCloudServlet extends DSpaceServlet
         {
             case Constants.COMMUNITY:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.sendCommunity(context, dso.getID());
+                    act.sendCommunity(context, dso.getID(), true);
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.sendCommunityAndChilds(context, dso.getID());
+                    act.sendCommunityAndChilds(context, dso.getID(), true);
                 break;
             case Constants.COLLECTION:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.sendCollection(context, dso.getID());
+                    act.sendCollection(context, dso.getID(), true);
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.sendCollectionAndChilds(context, dso.getID());
+                    act.sendCollectionAndChilds(context, dso.getID(), true);
                 break;
             case Constants.ITEM:
-                act.sendItem(context, dso.getID());
+                act.sendItem(context, dso.getID(), true);
                 break;
             default:
                 break;

@@ -41,6 +41,14 @@
             (Set<Integer>) request.getAttribute("backupComDone");
     Set<Integer> backupColDone = 
             (Set<Integer>) request.getAttribute("backupColDone");
+    Set<Integer> backupItemDone = 
+            (Set<Integer>) request.getAttribute("backupItemDone");
+    Set<Integer> cloudComExist = 
+            (Set<Integer>) request.getAttribute("cloudComExist");
+    Set<Integer> cloudColExist = 
+            (Set<Integer>) request.getAttribute("cloudColExist");
+    Set<Integer> cloudItemExist = 
+            (Set<Integer>) request.getAttribute("cloudItemExist");
 %>
 
 <%!
@@ -59,7 +67,11 @@
             Map<Integer, Collection[]> collections,
             Map<Integer, ItemIterator> items,
             Set<Integer> backupComDone,
-            Set<Integer> backupColDone) throws IOException, SQLException
+            Set<Integer> backupColDone,
+            Set<Integer> backupItemDone,
+            Set<Integer> cloudComExist,
+            Set<Integer> cloudColExist,
+            Set<Integer> cloudItemExist) throws IOException, SQLException
     {
         out.println("<ul>");
         
@@ -80,7 +92,10 @@
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     obj[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
             //link to sendCloud
-            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+            if(cloudComExist.contains(obj[i].getID()))
+                out.println("existCloud");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
                     obj[i].getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
             //link to sendCloud all
             out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
@@ -96,13 +111,16 @@
             {
                 Community[] newObj = subObj.get(obj[i].getID());
                 showCommunities(newObj, subObj, collections, items, 
-                        backupComDone, backupColDone);
+                        backupComDone, backupColDone, backupItemDone,
+                        cloudComExist, cloudColExist, cloudItemExist);
             }
             //if community contains collections show them
             if(collections.containsKey(obj[i].getID()))
             {
                 out.println("<br>");
-                showCollections(collections.get(obj[i].getID()), items, backupColDone);
+                showCollections(collections.get(obj[i].getID()), items, 
+                        backupColDone, backupItemDone,
+                        cloudColExist, cloudItemExist);
             }
             out.println("</li>");
         }
@@ -112,7 +130,10 @@
     //function to show the collections and respective links
     void showCollections(Collection[] col, 
             Map<Integer, ItemIterator> items,
-            Set<Integer> backupColDone) throws IOException, SQLException
+            Set<Integer> backupColDone,
+            Set<Integer> backupItemDone,
+            Set<Integer> cloudColExist,
+            Set<Integer> cloudItemExist) throws IOException, SQLException
     {
         out.println("<ul>");
         //for all collections do:
@@ -132,7 +153,10 @@
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     col[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
             //link to sendCloud
-            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+            if(cloudColExist.contains(col[i].getID()))
+                out.println("existCloud");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
                     col[i].getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
             //link to sendCloud all
             out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
@@ -145,14 +169,16 @@
                     col[i].getHandle() + "/all" + "\">" + "getAllCloudAmazon" + "</a>");
             //show items if collections contais
             if(items.containsKey(col[i].getID()))
-                showItems(items.get(col[i].getID()));
+                showItems(items.get(col[i].getID()), backupItemDone, cloudItemExist);
             out.println("</li>");
         }
         out.println("</ul>");
     }
     
     //function to show the items and respective links
-    void showItems(ItemIterator obj) throws IOException, SQLException
+    void showItems(ItemIterator obj, 
+            Set<Integer> backupItemDone,
+            Set<Integer> cloudItemExist) throws IOException, SQLException
     {
         out.println("<ul>");
         while(obj.hasNext())
@@ -163,10 +189,16 @@
             out.println("<a href=\"" + request.getContextPath() + "/handle/" + 
                     newObj.getHandle() + "\">" + newObj.getName() + "</a>");
             //link to backup
-            out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
-                    newObj.getHandle() + "\">" + "backup" + "</a>");
+            if(backupItemDone.contains(newObj.getID()))
+                out.println("backupDone");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
+                    newObj.getHandle() + "/this" + "\">" + "backup" + "</a>");
             //link to sendCloud
-            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
+            if(cloudItemExist.contains(newObj.getID()))
+                out.println("existCloud");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
                     newObj.getHandle() + "\">" + "sendCloudAmazon" + "</a>");
             //link to getCloud
             out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
@@ -184,7 +216,9 @@
         
         setContext(out, request);
         
-        showCommunities(com, subComMap, colMap, itemMap, backupComDone, backupColDone);
+        showCommunities(com, subComMap, colMap, itemMap, 
+                backupComDone, backupColDone, backupItemDone,
+                cloudComExist, cloudColExist, cloudItemExist);
     %>           
         
     <br> <br>

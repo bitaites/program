@@ -11,9 +11,9 @@ import com.Ostermiller.util.MD5;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.dspace.content.*;
@@ -41,7 +41,7 @@ public class Backup {
     * 
     * @return the MD5 of the file
     */
-    private String getMD5File(String filename)
+    public String getMD5File(String filename)
     {
         //get MD5 of the file
         try {
@@ -62,7 +62,7 @@ public class Backup {
     * 
     * @return the list of names
     */
-    private List<String> listFiles(String type)
+    /*private List<String> listFiles(String type)
     {
         List <String> files = new ArrayList<String>();
         
@@ -91,7 +91,7 @@ public class Backup {
         }
         
         return files;
-    }
+    }*/
     
     /**
     * See if a file exists in the default path.
@@ -101,7 +101,7 @@ public class Backup {
     * 
     * @return true if exists or false if not exists 
     */
-    private Boolean existFile(String name) 
+    public Boolean existFile(String name) 
     {       
         File Folder = new File(path);
         
@@ -258,10 +258,10 @@ public class Backup {
     * 
     * @return the list of names
     */
-    public List<String> listAllFiles()
+    /*public List<String> listAllFiles()
     {   
         return this.listFiles(null);
-    }
+    }*/
     
     /**
     * Return the names of the files in the 
@@ -269,10 +269,10 @@ public class Backup {
     * 
     * @return the list of names
     */
-    public List<String> listCommunities() 
+    /*public List<String> listCommunities() 
     {
         return this.listFiles("COMMUNITY");
-    }
+    }*/
     
     /**
     * Return the names of the files in the 
@@ -280,10 +280,10 @@ public class Backup {
     * 
     * @return the list of names
     */
-    public List<String> listCollections() 
+    /*public List<String> listCollections() 
     {
         return this.listFiles("COLLECTION");
-    }
+    }*/
     
     /**
     * Return the names of the files in the 
@@ -291,10 +291,10 @@ public class Backup {
     * 
     * @return the list of names
     */
-    public List<String> lisItems() 
+    /*public List<String> lisItems() 
     {
        return this.listFiles("ITEM");
-    }
+    }*/
     
     /**
     * Do the backup of a community.
@@ -530,7 +530,7 @@ public class Backup {
         //get the md5 saved int the last backup for this file
         String md5Save = backupProcess.getSavedMD5(context, obj.getHandle());
 
-        //if the two md5 are differents return false
+        //if the two md5 are differents return false because file is corrupted
         if(md5File.compareTo(md5Save) != 0)
             return false;
 
@@ -559,4 +559,103 @@ public class Backup {
             return true;  
     }
     
+    /**
+    * See if exists the Communities backup file and if it is updated.
+    * 
+    * @param context
+    *            DSpace context
+    * 
+    * @param com
+    *            array of Communities
+    * 
+    * @return integer set with all the IDs Item with existing backup done and updated
+    * 
+    */
+    public Set<Integer> checkCommunitiesBackup(Context context, Community[] com)
+    {
+        //This will contain all the CommunityIDs with backup file correct
+        Set<Integer> setInfo = new HashSet<Integer>();
+        
+        //do the operation for all communities
+        for(int i=0; i<com.length; i++)
+        {
+            //check the backup file exists and is correct
+            Boolean checkCorrect = this.backupDone(context, com[i].getID(), Constants.COMMUNITY);
+
+            //add the ID community to set if correct
+            if (checkCorrect == true)
+                setInfo.add(com[i].getID());     
+        }
+        
+        return setInfo;
+    }
+    
+    /**
+    * See if exists the Collections backup file and if it is updated.
+    * 
+    * @param context
+    *            DSpace context
+    * 
+    * @param com
+    *            array of Communities
+    * 
+    * @return integer set with all the IDs Item with existing backup done and updated
+    * 
+    */
+    public Set<Integer> checkCollectionsBackup(Context context, Collection[] col)
+    {
+        //This will contain all the CollectionIDs with backup file correct
+        Set<Integer> setInfo = new HashSet<Integer>();
+        
+        //do the operation for all collections
+        for(int i=0; i<col.length; i++)
+        {
+            //check the backup file exists and is correct
+            Boolean checkCorrect = this.backupDone(context, col[i].getID(), Constants.COLLECTION);
+
+            //add the ID collection to set if correct
+            if (checkCorrect == true)
+                setInfo.add(col[i].getID());     
+        }
+        
+        return setInfo;
+    }
+    
+    /**
+    * See if exists the Items backup file and if it is updated.
+    * 
+    * @param context
+    *            DSpace context
+    * 
+    * @param com
+    *            array of Items
+    * 
+    * @return integer set with all the IDs Item with existing backup done and updated
+    * 
+    */
+    public Set<Integer> checkItemsBackup(Context context, ItemIterator items)
+    {
+        //This will contain all the ItemsIDs with backup file in cloud
+        Set<Integer> setInfo = new HashSet<Integer>();
+        
+        try 
+        {   
+            //do the operation for all items
+            while(items.hasNext() == true)
+            {
+                Item objItem = items.next();
+                //check the backup file exists and is correct
+                Boolean checkCorrect = this.backupDone(context, objItem.getID(), Constants.ITEM);
+
+                //add the ID collection to set if correct
+                if (checkCorrect == true)
+                    setInfo.add(objItem.getID());
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
+        }
+ 
+        return setInfo;
+    }
 }
