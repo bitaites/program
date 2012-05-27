@@ -54,6 +54,12 @@
             (Set<Integer>) request.getAttribute("couldGetColFile");
     Set<Integer> couldGetItemFile = 
             (Set<Integer>) request.getAttribute("couldGetItemFile");
+    Set<Integer> couldDoRestoreCom = 
+            (Set<Integer>) request.getAttribute("couldDoRestoreCom");
+    Set<Integer> couldDoRestoreCol = 
+            (Set<Integer>) request.getAttribute("couldDoRestoreCol");
+    Set<Integer> couldDoRestoreItem = 
+            (Set<Integer>) request.getAttribute("couldDoRestoreItem");
 %>
 
 <%!
@@ -79,7 +85,10 @@
             Set<Integer> cloudItemExist,
             Set<Integer> couldGetComFile, 
             Set<Integer> couldGetColFile, 
-            Set<Integer> couldGetItemFile) throws IOException, SQLException
+            Set<Integer> couldGetItemFile,
+            Set<Integer> couldDoRestoreCom,
+            Set<Integer> couldDoRestoreCol, 
+            Set<Integer> couldDoRestoreItem) throws IOException, SQLException
     {
         out.println("<ul>");
         
@@ -98,6 +107,15 @@
                     obj[i].getHandle() + "/this" + "\">" + "backup" + "</a>"); 
             //link to backup all
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
+                    obj[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
+            //link to restore
+            if(!couldDoRestoreCom.contains(obj[i].getID()))
+                out.println("restoreNotAvailale");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
+                    obj[i].getHandle() + "/this" + "\">" + "restore" + "</a>"); 
+            //link to restore all
+            out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
                     obj[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
             //link to sendCloud
             if(cloudComExist.contains(obj[i].getID()))
@@ -128,7 +146,8 @@
                 showCommunities(newObj, subObj, collections, items, 
                         backupComDone, backupColDone, backupItemDone,
                         cloudComExist, cloudColExist, cloudItemExist,
-                        couldGetComFile, couldGetColFile, couldGetItemFile);
+                        couldGetComFile, couldGetColFile, couldGetItemFile,
+                        couldDoRestoreCom, couldDoRestoreCol, couldDoRestoreItem);
             }
             //if community contains collections show them
             if(collections.containsKey(obj[i].getID()))
@@ -137,7 +156,8 @@
                 showCollections(collections.get(obj[i].getID()), items, 
                         backupColDone, backupItemDone,
                         cloudColExist, cloudItemExist,
-                        couldGetColFile, couldGetItemFile);
+                        couldGetColFile, couldGetItemFile,
+                        couldDoRestoreCol, couldDoRestoreItem);
             }
             out.println("</li>");
         }
@@ -152,7 +172,9 @@
             Set<Integer> cloudColExist,
             Set<Integer> cloudItemExist,
             Set<Integer> couldGetColFile, 
-            Set<Integer> couldGetItemFile) throws IOException, SQLException
+            Set<Integer> couldGetItemFile,
+            Set<Integer> couldDoRestoreCol, 
+            Set<Integer> couldDoRestoreItem) throws IOException, SQLException
     {
         out.println("<ul>");
         //for all collections do:
@@ -170,6 +192,15 @@
                     col[i].getHandle() + "/this" + "\">" + "backup" + "</a>");
             //link to backup all
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
+                    col[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
+            //link to restore
+            if(!couldDoRestoreCol.contains(col[i].getID()))
+                out.println("restoreNotAvailale");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
+                    col[i].getHandle() + "/this" + "\">" + "restore" + "</a>"); 
+            //link to restore all
+            out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
                     col[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
             //link to sendCloud
             if(cloudColExist.contains(col[i].getID()))
@@ -196,7 +227,7 @@
             //show items if collections contais
             if(items.containsKey(col[i].getID()))
                 showItems(items.get(col[i].getID()), backupItemDone, 
-                        cloudItemExist, couldGetItemFile);
+                        cloudItemExist, couldGetItemFile, couldDoRestoreItem);
             out.println("</li>");
         }
         out.println("</ul>");
@@ -206,7 +237,8 @@
     void showItems(ItemIterator obj, 
             Set<Integer> backupItemDone,
             Set<Integer> cloudItemExist,
-            Set<Integer> couldGetItemFile) throws IOException, SQLException
+            Set<Integer> couldGetItemFile,
+            Set<Integer> couldDoRestoreItem) throws IOException, SQLException
     {
         out.println("<ul>");
         while(obj.hasNext())
@@ -222,6 +254,12 @@
             else
                 out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     newObj.getHandle() + "/this" + "\">" + "backup" + "</a>");
+            //link to restore
+            if(!couldDoRestoreItem.contains(newObj.getID()))
+                out.println("restoreNotAvailale");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
+                    newObj.getHandle() + "/this" + "\">" + "restore" + "</a>"); 
             //link to sendCloud
             if(cloudItemExist.contains(newObj.getID()))
                 out.println("existCloud");
@@ -250,7 +288,8 @@
         showCommunities(com, subComMap, colMap, itemMap, 
                 backupComDone, backupColDone, backupItemDone,
                 cloudComExist, cloudColExist, cloudItemExist,
-                couldGetComFile, couldGetColFile, couldGetItemFile);
+                couldGetComFile, couldGetColFile, couldGetItemFile,
+                couldDoRestoreCom, couldDoRestoreCol, couldDoRestoreItem);
     %>           
         
     <br> <br>

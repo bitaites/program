@@ -7,15 +7,24 @@
  */
 package org.dspace.app.webui.mpinho;
 
+import java.io.File;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.dspace.authorize.AuthorizeException;
 import org.dspace.content.*;
+import org.dspace.content.crosswalk.CrosswalkException;
+import org.dspace.content.packager.PackageException;
+import org.dspace.content.packager.PackageIngester;
+import org.dspace.content.packager.PackageParameters;
 import org.dspace.core.Constants;
 import org.dspace.core.Context;
+import org.dspace.core.PluginManager;
+import org.dspace.eperson.EPerson;
 
 /**
  *
@@ -54,8 +63,57 @@ public class Restore {
         return obj;
     } 
     
-    public Boolean restore(Context context, int type, int ref)
+    private Boolean restore(Context context, int type, int ref)
     {
+        EPerson myPerson = null;
+        
+        //TODO change this - get current person logged
+        try {
+            myPerson = EPerson.findByEmail(context, "ei06128@fe.up.pt");
+        } 
+        catch (Exception ex) 
+        {
+            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
+        //set the current user in the context
+        if(myPerson != null)
+            context.setCurrentUser(myPerson);
+        
+        //get DSpaceObject
+        DSpaceObject obj = this.getDSpaceObject(context, type, ref);
+        
+        Backup backup = new Backup();
+        String filename = backup.getFileNameObj(obj);
+        
+        //get file name
+        String pathFile = path + filename;
+        
+        //parameters of ingester
+        PackageParameters params = new PackageParameters();
+        params.setRestoreModeEnabled(true);
+        params.setReplaceModeEnabled(true);
+        
+        //get file to do the restore
+        File theFile = new File(pathFile);
+        
+        PackageIngester sip = (PackageIngester) PluginManager
+                    .getNamedPlugin(PackageIngester.class, "AIP");
+        
+        try {
+            sip.replace(context, obj, theFile, params);
+        } 
+        catch (Exception ex) 
+        {
+            Logger.getLogger(Restore.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        
+        // if exist delete a regist from the table modifications
+        Logbackup log = new Logbackup();
+        log.deleteLogTable(context, ref, type);
+
         return true;
     }
     

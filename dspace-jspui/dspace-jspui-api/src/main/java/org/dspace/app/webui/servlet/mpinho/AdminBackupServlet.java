@@ -22,9 +22,9 @@ import java.util.Set;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.log4j.Logger;
 import org.dspace.app.webui.mpinho.Backup;
 import org.dspace.app.webui.mpinho.ConCloudAmazon;
+import org.dspace.app.webui.mpinho.Restore;
 import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.app.webui.util.JSPManager;
 import org.dspace.content.Collection;
@@ -70,6 +70,12 @@ public class AdminBackupServlet extends DSpaceServlet
         Set<Integer> couldGetColFile = new HashSet<Integer>();
         //This will contain all the itemIDs that is possible to get the backup file
         Set<Integer> couldGetItemFile = new HashSet<Integer>();
+        //This will contain all the communityIDs that is possible to do restore
+        Set<Integer> couldDoRestoreCom = new HashSet<Integer>();
+        //This will contain all the collectionIDs that is possible to do restore
+        Set<Integer> couldDoRestoreCol = new HashSet<Integer>();
+        //This will contain all the itemIDs that is possible to do restore
+        Set<Integer> couldDoRestoreItem = new HashSet<Integer>();
         
         //get top communities
         Community[] communities = Community.findAllTop(context);
@@ -102,6 +108,11 @@ public class AdminBackupServlet extends DSpaceServlet
             if (collections.length != 0)
                 couldGetColFile.addAll(conCloud.checkPossibleCollectionsGet(context, collections));
             
+            //see wich collectionIDs are possible to restore
+            Restore restoreData = new Restore();
+            if (collections.length != 0)
+                couldDoRestoreCol.addAll(restoreData.checkCollectionsRestore(context, collections));
+            
             //get items
             for(int j=0; j<collections.length; j++)
             {
@@ -120,6 +131,10 @@ public class AdminBackupServlet extends DSpaceServlet
                 //see wich items are possbile to get the backup file from cloud
                 if (item.hasNext())
                     couldGetItemFile.addAll(conCloud.checkPossibleItemsGet(context, item));
+                
+                //see wich itemIDs are possible to restore
+                if (item.hasNext())
+                    couldDoRestoreItem.addAll(restoreData.checkItemsRestore(context, item));
             }
             
             //get sub-communities
@@ -135,13 +150,18 @@ public class AdminBackupServlet extends DSpaceServlet
         
         ConCloudAmazon conCloud = new ConCloudAmazon();
         
-        //see wich collections have the updated backup file in cloud
+        //see wich communities have the updated backup file in cloud
         if (allCommunities.length != 0)
             cloudComExist.addAll(conCloud.checkCommunitiesInCloud(context, allCommunities));
         
-        //see wich collections are possbile to get the backup file from cloud
+        //see wich communities are possbile to get the backup file from cloud
         if (allCommunities.length != 0)
             couldGetComFile.addAll(conCloud.checkPossibleCommunitiesGet(context, allCommunities));
+        
+        //see wich communityIDs are possible to restore
+        Restore restoreData = new Restore();
+        if (allCommunities.length != 0)
+            couldDoRestoreCom.addAll(restoreData.checkCommunitiesRestore(context, allCommunities));
         
         request.setAttribute("com", communities);
         request.setAttribute("subComMap", subComMap);
@@ -156,6 +176,9 @@ public class AdminBackupServlet extends DSpaceServlet
         request.setAttribute("couldGetComFile", couldGetComFile);
         request.setAttribute("couldGetColFile", couldGetColFile);
         request.setAttribute("couldGetItemFile", couldGetItemFile);
+        request.setAttribute("couldDoRestoreCom", couldDoRestoreCom);
+        request.setAttribute("couldDoRestoreCol", couldDoRestoreCol);
+        request.setAttribute("couldDoRestoreItem", couldDoRestoreItem);
         JSPManager.showJSP(request, response, "/admin-backup.jsp");
     }
     
