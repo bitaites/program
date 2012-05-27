@@ -14,6 +14,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.SQLException;
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.ws.rs.core.MediaType;
@@ -34,14 +35,14 @@ import static org.jclouds.blobstore.options.PutOptions.Builder.multipart;
 /**
  * Class for Send Files to Cloud Amazon
  * 
- * @author bitaites
+ * @author mpinho
  */
 public class ConCloudAmazon {
     
-    private String path = "/home/bitaites/Desktop/backupfiles/";
-    private String identity = "AKIAJ7U22TYN64UZZGTA";
-    private String credential = "yKOuLVYtF1i79A5r1Ab2ZkRZezu4x2LFKT93CvzE";
-    private String container = "mpinho-dspace";
+    private String path = ConstantsMPinho.pathBackupFiles;
+    private String identity = ConstantsMPinho.identityCloudAmazon;
+    private String credential = ConstantsMPinho.passCloudAmazon;
+    private String container = ConstantsMPinho.containerCloudAmazon;
     private BlobStoreContext connection = null;
     private Map<String,String> filesInCloud = new HashMap<String, String>();
     
@@ -84,7 +85,7 @@ public class ConCloudAmazon {
         } 
         catch (IOException ex) 
         {
-            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
     }
@@ -111,7 +112,7 @@ public class ConCloudAmazon {
             obj = DSpaceObject.find(context, type, ref);
         } 
         catch (SQLException ex) {
-            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         return obj;
@@ -232,6 +233,9 @@ public class ConCloudAmazon {
         int slash = filename.indexOf('@');
         String typeObject = filename.substring(0, slash) + "/";
         
+        //if exists file with equal name in destination, delete it
+        blobStore.removeBlob(this.container, typeObject+filename);
+        
         //create blob with the file to sendo to cloud
         Blob blob = null;
         try 
@@ -279,6 +283,13 @@ public class ConCloudAmazon {
         //get the object type of the file
         int slash = path.indexOf('@');
         String typeObject = path.substring(0, slash) + "/";
+        
+        //if exists file with equal name in destination, delete it
+        try {
+            blobStore.removeBlob(this.container, typeObject+filename).get();
+        } catch (Exception ex) {
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
         //create blob with the file to sendo to cloud
         Blob blob = blobStore.blobBuilder(typeObject+filename).payload(input).
@@ -381,6 +392,13 @@ public class ConCloudAmazon {
         //get type file
         int firstSlash = filename.indexOf('@');
         String fileLocation = filename.substring(0, firstSlash) + "/" + filename;
+        
+        //see if exists file with same name in destination folder
+        boolean exists = (new File(this.path + filename)).exists();
+        
+        //if file exists in destination folder, delete it
+        if(exists == true)
+            (new File(this.path + filename)).delete();
         
         //get the respective file
         ListenableFuture<Blob> futureETag = blobStore.getBlob(container, fileLocation);
@@ -499,22 +517,34 @@ public class ConCloudAmazon {
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.COMMUNITY, ref);
         
-        //TODO - MAKE RULES HERE TO GET COMMUNITY
+        //if just one file to get make connection with cloud
+        if (establishConnection == true)
+        {
+            this.makeConnection();
+            this.filesInCloud.putAll(this.getInfoFilesIn(Constants.COMMUNITY));
+        }
+        
+        //see if it is possible and necessary get community backup from cloud
+        Boolean var = this.getFileFromCloud(context, ref, Constants.COMMUNITY);
+        if (var == false)
+        {
+            //if just one file to send close connection with cloud
+            if (establishConnection == true)
+                this.closeConnection();
+            return false;
+        }
         
         //get file name of the community backup
         Backup backup = new Backup();
         String filename = backup.getFileNameObj(obj);
         
-        //if just one file to get make connection with cloud
-        if(establishConnection == true)
-            this.makeConnection();
         
         //get file from cloud
         Boolean result = this.getFile(filename);
         
         //if just one file to send close connection with cloud
         if(establishConnection == true)
-            this.connection.close();
+            this.closeConnection();
         
         return result;
         
@@ -609,22 +639,33 @@ public class ConCloudAmazon {
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.COLLECTION, ref);
         
+        //if just one file to get make connection with cloud
+        if (establishConnection == true)
+        {
+            this.makeConnection();
+            this.filesInCloud.putAll(this.getInfoFilesIn(Constants.COLLECTION));
+        }
+        
+        //see if it is possible and necessary get collection backup from cloud
+        Boolean var = this.getFileFromCloud(context, ref, Constants.COLLECTION);
+        if (var == false)
+        {
+            //if just one file to send close connection with cloud
+            if (establishConnection == true)
+                this.closeConnection();
+            return false;
+        }
+        
         //get file name of the community backup
         Backup backup = new Backup();
         String filename = backup.getFileNameObj(obj);
-        
-        //TODO - MAKE RULES HERE TO GET COLLECTION
-        
-        //if just one file to get make connection with cloud
-        if(establishConnection == true)
-            this.makeConnection();
         
         //get file from cloud
         Boolean result = this.getFile(filename);
         
         //if just one file to send close connection with cloud
         if(establishConnection == true)
-            this.connection.close();
+            this.closeConnection();
         
         return result;
     }
@@ -718,22 +759,33 @@ public class ConCloudAmazon {
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.ITEM, ref);
         
+        //if just one file to get make connection with cloud
+        if (establishConnection == true)
+        {
+            this.makeConnection();
+            this.filesInCloud.putAll(this.getInfoFilesIn(Constants.ITEM));
+        }
+        
+        //see if it is possible and necessary get community backup from cloud
+        Boolean var = this.getFileFromCloud(context, ref, Constants.ITEM);
+        if (var == false)
+        {
+            //if just one file to send close connection with cloud
+            if (establishConnection == true)
+                this.closeConnection();
+            return false;
+        }
+        
         //get file name of the community backup
         Backup backup = new Backup();
         String filename = backup.getFileNameObj(obj);
-        
-        //TODO - MAKE RULES HERE TO GET ITEM
-        
-        //if just one file to get make connection with cloud
-        if(establishConnection == true)
-            this.makeConnection();
         
         //get file from cloud
         Boolean result = this.getFile(filename);
         
         //if just one file to send close connection with cloud
         if(establishConnection == true)
-            this.connection.close();
+            this.closeConnection();
         
         return result;
     }
@@ -777,7 +829,7 @@ public class ConCloudAmazon {
         } 
         catch (Exception ex) 
         {
-            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             //it means it is the first father in the order, so close connection
             if (establishConnection == true)
                 this.closeConnection();
@@ -824,7 +876,10 @@ public class ConCloudAmazon {
     {
         //if true make the connection available
         if (establishConnection == true)
+        {
             this.makeConnection();
+            this.filesInCloud.putAll(this.getInfoFilesIn(Constants.COMMUNITY));
+        }
         
         //get file community from cloud
         getCommunity(context, ref, false);
@@ -844,8 +899,8 @@ public class ConCloudAmazon {
         {
             //it means it is the first father in the order, so close connection
             if (establishConnection == true)
-                this.connection.close();
-            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+                this.closeConnection();
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         
@@ -865,7 +920,7 @@ public class ConCloudAmazon {
         
         //it means it is the first father in the order
         if (establishConnection == true)
-            this.connection.close();
+            this.closeConnection();
         
         return true;
     }
@@ -909,7 +964,7 @@ public class ConCloudAmazon {
         } 
         catch (Exception ex) 
         {
-            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             //it means it is the first father in the order, so close connection
             if (establishConnection == true)
                 this.closeConnection();
@@ -927,7 +982,7 @@ public class ConCloudAmazon {
         } 
         catch (Exception ex) 
         {
-            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             //it means it is the first father in the order, so close connection
             if (establishConnection == true)
                 this.closeConnection();
@@ -960,7 +1015,10 @@ public class ConCloudAmazon {
     {
         //if first, make connection
         if (establishConnection == true)
+        {
             this.makeConnection();
+            this.filesInCloud.putAll(this.getInfoFilesIn(Constants.COLLECTION));
+        }
         
         //get from cloud atual collection file
         getCollection(context, ref, false);
@@ -978,8 +1036,8 @@ public class ConCloudAmazon {
         {
             //it means it is the first father in the order, so close connection
             if (establishConnection == true)
-                this.connection.close();
-            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+                this.closeConnection();
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         
@@ -996,14 +1054,14 @@ public class ConCloudAmazon {
         {
             //it means it is the first father in the order, so close connection
             if (establishConnection == true)
-                this.connection.close();
-            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+                this.closeConnection();
+            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         
         //it means it is the first father in the order, so close connection
         if (establishConnection == true)
-            this.connection.close();
+            this.closeConnection();
         
         return true;
     }
@@ -1057,7 +1115,7 @@ public class ConCloudAmazon {
             try {
                 item = Item.find(context, ref);
             } catch (SQLException ex) {
-                Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
             }
             Date lastModification = item.getLastModified();
             

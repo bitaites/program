@@ -234,7 +234,7 @@ public class EditCommunitiesServlet extends DSpaceServlet
             // Show main control page
             //showControls(context, request, response);
             
-            //Add Bitaites - regist the modifications in the table logbackup
+            //Add by mpinho - regist the modifications in the table logbackup
             //regist the action in the table logbackup
             // Commit changes to DB
             //context.complete();
@@ -264,7 +264,7 @@ public class EditCommunitiesServlet extends DSpaceServlet
             // Show main control page
             showControls(context, request, response);
 
-            //Add Bitaites - regist the modifications in the table logbackup
+            //Add by mpinho - regist the modifications in the table logbackup
             //regist the action in the table logbackup
             //Commit changes to DB
             context.commit();
@@ -611,7 +611,7 @@ public class EditCommunitiesServlet extends DSpaceServlet
             showControls(context, request, response);
         }
 
-        //Add Bitaites - regist the modifications in the table logbackup
+        //Add by mpinho - regist the modifications in the table logbackup
         
         // Commit changes to DB
         //context.complete();
@@ -882,7 +882,7 @@ public class EditCommunitiesServlet extends DSpaceServlet
             // save the changes
             collection.update();
             
-            //Add Bitaites - regist the modifications in the table logbackup
+            //Add by mpinho - regist the modifications in the table logbackup
         
             // Commit changes to DB
             //context.complete();
@@ -923,7 +923,7 @@ public class EditCommunitiesServlet extends DSpaceServlet
             showControls(context, request, response);
         }
         
-        //Add Bitaites - regist the modifications in the table logbackup
+        //Add by mpinho - regist the modifications in the table logbackup
 
         // Commit changes to DB
         collection.update();

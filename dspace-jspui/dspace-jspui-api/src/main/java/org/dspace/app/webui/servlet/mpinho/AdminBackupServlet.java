@@ -15,7 +15,10 @@ package org.dspace.app.webui.servlet.mpinho;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,8 +28,8 @@ import org.dspace.app.webui.mpinho.ConCloudAmazon;
 import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.app.webui.util.JSPManager;
 import org.dspace.content.Collection;
-import org.dspace.content.*;
-import org.dspace.core.Constants;
+import org.dspace.content.Community;
+import org.dspace.content.ItemIterator;
 import org.dspace.core.Context;
 
 /**
@@ -34,12 +37,10 @@ import org.dspace.core.Context;
  * 
  * Show all the objects(communities, collections and items) and the backup options
  * 
- * @author bitaites
+ * @author mpinho
  */
 public class AdminBackupServlet extends DSpaceServlet
 {
-    /** log4j category */
-    private static Logger log = Logger.getLogger(AdminBackupServlet.class);
     
     protected void doDSGet(Context context, HttpServletRequest request,
             HttpServletResponse response) 
@@ -63,6 +64,12 @@ public class AdminBackupServlet extends DSpaceServlet
         Set<Integer> cloudColExist = new HashSet<Integer>();
         //This will contain all the itemIDs with updated backup file in cloud
         Set<Integer> cloudItemExist = new HashSet<Integer>();
+        //This will contain all the communityIDs that is possible to get the backup file
+        Set<Integer> couldGetComFile = new HashSet<Integer>();
+        //This will contain all the collectionIDs that is possible to get the backup file
+        Set<Integer> couldGetColFile = new HashSet<Integer>();
+        //This will contain all the itemIDs that is possible to get the backup file
+        Set<Integer> couldGetItemFile = new HashSet<Integer>();
         
         //get top communities
         Community[] communities = Community.findAllTop(context);
@@ -91,6 +98,10 @@ public class AdminBackupServlet extends DSpaceServlet
             if (collections.length != 0)
                 cloudColExist.addAll(conCloud.checkCollectionsInCloud(context, collections));
             
+            //see wich collections are possbile to get the backup file from cloud
+            if (collections.length != 0)
+                couldGetColFile.addAll(conCloud.checkPossibleCollectionsGet(context, collections));
+            
             //get items
             for(int j=0; j<collections.length; j++)
             {
@@ -105,6 +116,10 @@ public class AdminBackupServlet extends DSpaceServlet
                 //see wich items have the updated backup file in cloud
                 if (item.hasNext())
                     cloudItemExist.addAll(conCloud.checkItemsInCloud(context, item));
+                
+                //see wich items are possbile to get the backup file from cloud
+                if (item.hasNext())
+                    couldGetItemFile.addAll(conCloud.checkPossibleItemsGet(context, item));
             }
             
             //get sub-communities
@@ -118,15 +133,15 @@ public class AdminBackupServlet extends DSpaceServlet
         if (allCommunities.length != 0)
             backupComDone.addAll(objBackup.checkCommunitiesBackup(context, allCommunities));
         
-        //see wich collections have the updated backup file in cloud
         ConCloudAmazon conCloud = new ConCloudAmazon();
+        
+        //see wich collections have the updated backup file in cloud
         if (allCommunities.length != 0)
             cloudComExist.addAll(conCloud.checkCommunitiesInCloud(context, allCommunities));
-            
         
-        String hello = "hello";
-        
-        request.setAttribute("hello", hello);
+        //see wich collections are possbile to get the backup file from cloud
+        if (allCommunities.length != 0)
+            couldGetComFile.addAll(conCloud.checkPossibleCommunitiesGet(context, allCommunities));
         
         request.setAttribute("com", communities);
         request.setAttribute("subComMap", subComMap);
@@ -138,6 +153,9 @@ public class AdminBackupServlet extends DSpaceServlet
         request.setAttribute("cloudComExist", cloudComExist);
         request.setAttribute("cloudColExist", cloudColExist);
         request.setAttribute("cloudItemExist", cloudItemExist);
+        request.setAttribute("couldGetComFile", couldGetComFile);
+        request.setAttribute("couldGetColFile", couldGetColFile);
+        request.setAttribute("couldGetItemFile", couldGetItemFile);
         JSPManager.showJSP(request, response, "/admin-backup.jsp");
     }
     

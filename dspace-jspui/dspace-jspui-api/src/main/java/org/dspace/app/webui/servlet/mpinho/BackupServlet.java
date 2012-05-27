@@ -29,12 +29,10 @@ import org.dspace.handle.HandleManager;
  * 
  * Run all the command of backup presents in the view "admin-backup"
  * 
- * @author bitaites
+ * @author mpinho
  */
 public class BackupServlet extends DSpaceServlet
 {
-    /** log4j category */
-    private static Logger log = Logger.getLogger(BackupServlet.class);
     
     protected void doDSGet(Context context, HttpServletRequest request,
             HttpServletResponse response) 

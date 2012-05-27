@@ -27,11 +27,10 @@ import org.dspace.handle.HandleManager;
 /**
  * Servlet to send files to amazon cloud.  
  * 
- * @author bitaites
+ * @author mpinho
  */
 public class SendCloudServlet extends DSpaceServlet
 {
-    private static Logger log = Logger.getLogger(SendCloudServlet.class);
     
     protected void doDSGet(Context context, HttpServletRequest request,
             HttpServletResponse response) 

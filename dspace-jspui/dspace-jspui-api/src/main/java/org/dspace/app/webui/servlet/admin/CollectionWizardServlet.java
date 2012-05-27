@@ -193,7 +193,7 @@ public class CollectionWizardServlet extends DSpaceServlet
             JSPManager.showJSP(request, response,
                     "/dspace-admin/wizard-questions.jsp");
             
-            //Add Bitaites - regist the modifications in the table logbackup
+            //Add by mpinho - regist the modifications in the table logbackup
             // Commit changes to DB
             //context.complete();
             context.commit();

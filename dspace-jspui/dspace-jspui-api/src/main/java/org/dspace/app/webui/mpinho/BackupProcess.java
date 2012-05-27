@@ -9,17 +9,12 @@
 package org.dspace.app.webui.mpinho;
 
 import com.Ostermiller.util.MD5;
-import com.google.common.io.Files;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.security.MessageDigest;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
 import java.util.logging.Level;
-import org.apache.log4j.Logger;
 import org.dspace.content.DSpaceObject;
 import org.dspace.core.Context;
 import org.dspace.storage.rdbms.DatabaseManager;
@@ -28,16 +23,14 @@ import org.dspace.storage.rdbms.TableRow;
 /**
  * Class to access status of backup process registed in the database.
  * 
- * See all the information in the table sthanfile
+ * See all the information in the respective table
  * 
- * @author bitaites
+ * @author mpinho
  */
 public class BackupProcess {
     
-    /** log4j category */
-    private static Logger log = Logger.getLogger(BackupProcess.class);
-    
-    private String path = "/home/bitaites/Desktop/backupfiles/";
+    private String path = ConstantsMPinho.pathBackupFiles;
+    private String table = ConstantsMPinho.tableBackupRegistry;
     
     /**
     * Return the specific DSpaceObject.
@@ -61,7 +54,7 @@ public class BackupProcess {
             obj = DSpaceObject.find(context, type, ref);
         } 
         catch (SQLException ex) {
-            java.util.logging.Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         return obj;
@@ -104,29 +97,29 @@ public class BackupProcess {
         }
             
         //see if exists some regist in the table sthanfile related with this object
-        String queryNew = "SELECT * FROM sthanfile WHERE object_id = ?" + " and type_object = ?";        
+        String queryNew = "SELECT * FROM " + this.table + " WHERE object_id = ?" + " and type_object = ?";        
         TableRow row;
         try {
             row = DatabaseManager.querySingle(context, queryNew, object_id, type_object);
         } 
         catch (Exception ex) 
         {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
             return;
         }
         
         String sql;
             
-        //chose between update or insert regist in table logbackup
+        //chose between update or insert regist in table
         if(row != null)
         {
-            sql = "UPDATE sthanfile SET md5 = '" + hash + 
-                    "', last_backup = NOW() WHERE sthanfile_id = " + 
-                    row.getIntColumn("sthanfile_id");
+            sql = "UPDATE " + this.table + " SET md5 = '" + hash + 
+                    "', last_backup = NOW() WHERE " + this.table + "_id = " + 
+                    row.getIntColumn(this.table + "_id");
         }        
         else
         {
-            sql = "INSERT INTO sthanfile VALUES (getnextid('sthanfile'), " + 
+            sql = "INSERT INTO " + this.table + " VALUES (getnextid('" + this.table +"'), " + 
                     object_id + ", " + type_object + ", '" + handler + "', NOW(), '" 
                     + hash + "')";
         }
@@ -139,7 +132,7 @@ public class BackupProcess {
             context.commit();
         } 
         catch (Exception ex) {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -161,7 +154,7 @@ public class BackupProcess {
     */
     public void updateProcessSendCloud(Context context, String handler, String md5, String etag)
     {  
-        String sql = "UPDATE sthanfile SET etag = '" + etag + 
+        String sql = "UPDATE " + this.table + " SET etag = '" + etag + 
                     "', last_sendcloud = NOW(), " +
                     "md5_sent = '" + md5 + "' WHERE handle = '" + handler + "'";
         
@@ -173,7 +166,7 @@ public class BackupProcess {
             context.commit();
         } 
         catch (Exception ex) {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
         }   
     }
     
@@ -192,19 +185,51 @@ public class BackupProcess {
     public String getSavedMD5(Context context, String handler)
     {
         //get the row corresponding with specified handler
-        String queryNew = "SELECT * FROM sthanfile WHERE handle = ?";        
+        String queryNew = "SELECT * FROM " + this.table + " WHERE handle = ?";        
         TableRow row;
         try {
             row = DatabaseManager.querySingle(context, queryNew, handler);
         } 
         catch (Exception ex) 
         {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
         
         if (row != null)
             return row.getStringColumn("md5");
+        else
+            return null;
+    }
+    
+    /**
+    * Get the MD5 of the last backup file sent to cloud.
+    * The save happens when a sent to cloud occurs.
+    * 
+    * @param context
+    *            DSpace context
+    * 
+    * @param handler
+    *           Handler of the DSpace Object
+    * 
+    * @return the saved MD5 of the file sent to cloud
+    */
+    public String getSentMD5(Context context, String handler)
+    {
+        //get the row corresponding with specified handler
+        String queryNew = "SELECT * FROM " + this.table + " WHERE handle = ?";        
+        TableRow row;
+        try {
+            row = DatabaseManager.querySingle(context, queryNew, handler);
+        } 
+        catch (Exception ex) 
+        {
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
+        
+        if (row != null)
+            return row.getStringColumn("md5_sent");
         else
             return null;
     }
@@ -224,14 +249,14 @@ public class BackupProcess {
     public Boolean existRegist(Context context, String handler)
     {
         //define query
-        String queryNew = "SELECT * FROM sthanfile WHERE handle = ?";
+        String queryNew = "SELECT * FROM " + this.table + " WHERE handle = ?";
         
         //execute query in db
         TableRow row = null;
         try {
             row = DatabaseManager.querySingle(context, queryNew, handler);
         } catch (Exception ex) {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         //return the result
@@ -255,14 +280,14 @@ public class BackupProcess {
     public Date getLastBackupDate(Context context, String handler)
     {
         //get the row corresponding with specified handler
-        String queryNew = "SELECT * FROM sthanfile WHERE handle = ?";        
+        String queryNew = "SELECT * FROM " + this.table + " WHERE handle = ?";        
         TableRow row;
         try {
             row = DatabaseManager.querySingle(context, queryNew, handler);
         } 
         catch (Exception ex) 
         {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
         
@@ -286,14 +311,14 @@ public class BackupProcess {
     public Date getLastSendCloudDate(Context context, String handler)
     {
         //get the row corresponding with specified handler
-        String queryNew = "SELECT * FROM sthanfile WHERE handle = ?";        
+        String queryNew = "SELECT * FROM " + this.table + " WHERE handle = ?";        
         TableRow row;
         try {
             row = DatabaseManager.querySingle(context, queryNew, handler);
         } 
         catch (Exception ex) 
         {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
         
@@ -317,14 +342,14 @@ public class BackupProcess {
     public String getETag(Context context, String handler)
     {
         //get the row corresponding with specified handler
-        String queryNew = "SELECT * FROM sthanfile WHERE handle = ?";        
+        String queryNew = "SELECT * FROM " + this.table + " WHERE handle = ?";        
         TableRow row;
         try {
             row = DatabaseManager.querySingle(context, queryNew, handler);
         } 
         catch (Exception ex) 
         {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
         
@@ -348,14 +373,14 @@ public class BackupProcess {
     public Boolean equalsFiles(Context context, String handler)
     {
         //get the row corresponding with specified handler
-        String queryNew = "SELECT * FROM sthanfile WHERE handle = ?";        
+        String queryNew = "SELECT * FROM " + this.table + " WHERE handle = ?";        
         TableRow row;
         try {
             row = DatabaseManager.querySingle(context, queryNew, handler);
         } 
         catch (Exception ex) 
         {
-            java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
         

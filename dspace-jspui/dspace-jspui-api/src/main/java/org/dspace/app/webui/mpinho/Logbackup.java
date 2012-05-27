@@ -8,26 +8,20 @@
 
 package org.dspace.app.webui.mpinho;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
-import org.apache.log4j.Logger;
 import org.dspace.core.Context;
 import org.dspace.storage.rdbms.DatabaseManager;
 import org.dspace.storage.rdbms.TableRow;
-import org.dspace.storage.rdbms.TableRowIterator;
 
 /**
  * Class to access logs of Backup in the database
  * 
- * @author bitaites
+ * @author mpinho
  */
 public class Logbackup {
     
-    /** log4j category */
-    private static Logger log = Logger.getLogger(Logbackup.class);
+    private String table = ConstantsMPinho.tableModifications;
     
     /**
     * Verify if exists a registry about a modification in a respective 
@@ -47,7 +41,7 @@ public class Logbackup {
     public Boolean existsLog(Context context, int ref, int type)
     {
         //define query
-        String query = "SELECT * FROM logbackup WHERE object_id = '" + 
+        String query = "SELECT * FROM " + this.table + " WHERE object_id = '" + 
                 String.valueOf(ref) + "' and type_object = '" + String.valueOf(type) + "'";
         
         //execute query in db
@@ -88,7 +82,7 @@ public class Logbackup {
             String handler, String action)
     {           
         //see if exists another modification in the table logsbackup related with this object
-        String queryNew = "SELECT * FROM logbackup WHERE object_id = ?" + " and type_object = ?";        
+        String queryNew = "SELECT * FROM " + this.table + " WHERE object_id = ?" + " and type_object = ?";        
         TableRow row;
         try {
             row = DatabaseManager.querySingle(context, queryNew, object_id, type_object);
@@ -103,11 +97,11 @@ public class Logbackup {
             
         //chose between update or insert regist in table logbackup
         if(row != null)
-            sql = "UPDATE logbackup SET action = '" + action + 
-                    "', last_modification = NOW() WHERE logbackup_id = " + 
+            sql = "UPDATE " + this.table + " SET action = '" + action + 
+                    "', last_modification = NOW() WHERE " + this.table + "_id = " + 
                     row.getIntColumn("logbackup_id");
         else
-            sql = "INSERT INTO logbackup VALUES (getnextid('logbackup'), " + 
+            sql = "INSERT INTO " + this.table + " VALUES (getnextid('" + this.table +"'), " + 
                     object_id + ", " + type_object + ", '" + handler + "', '" + action + "', NOW())";
         
         //try to execute the sql in the db
@@ -124,7 +118,7 @@ public class Logbackup {
     }
     
     /**
-    * Delete a regist from the table logbackup
+    * Delete a regist from the table
     * 
     * @param context
     *            DSpace context
@@ -145,7 +139,7 @@ public class Logbackup {
         else
         {
             //define query to get the row to delete
-            String query = "SELECT * FROM logbackup WHERE object_id = " + 
+            String query = "SELECT * FROM " + this.table + " WHERE object_id = " + 
                 ref + " and type_object = " + type;
         
             //contact to db to find the row and delete it
@@ -153,7 +147,7 @@ public class Logbackup {
             int count = 0;
             try {
                 row = DatabaseManager.querySingle(context, query);
-                row.setTable("logbackup");
+                row.setTable(this.table);
                 count = DatabaseManager.delete(context, row);
             } catch (Exception ex) {
                 java.util.logging.Logger.getLogger(Logbackup.class.getName()).log(Level.SEVERE, null, ex);

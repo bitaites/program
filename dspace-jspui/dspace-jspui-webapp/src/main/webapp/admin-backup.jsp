@@ -29,7 +29,6 @@
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
 <%
-    String frase = (String) request.getAttribute("hello");
     Community[] com = (Community[]) request.getAttribute("com");
     Map<Integer, Community[]> subComMap = 
             (Map<Integer, Community[]>) request.getAttribute("subComMap");
@@ -49,6 +48,12 @@
             (Set<Integer>) request.getAttribute("cloudColExist");
     Set<Integer> cloudItemExist = 
             (Set<Integer>) request.getAttribute("cloudItemExist");
+    Set<Integer> couldGetComFile = 
+            (Set<Integer>) request.getAttribute("couldGetComFile");
+    Set<Integer> couldGetColFile = 
+            (Set<Integer>) request.getAttribute("couldGetColFile");
+    Set<Integer> couldGetItemFile = 
+            (Set<Integer>) request.getAttribute("couldGetItemFile");
 %>
 
 <%!
@@ -71,7 +76,10 @@
             Set<Integer> backupItemDone,
             Set<Integer> cloudComExist,
             Set<Integer> cloudColExist,
-            Set<Integer> cloudItemExist) throws IOException, SQLException
+            Set<Integer> cloudItemExist,
+            Set<Integer> couldGetComFile, 
+            Set<Integer> couldGetColFile, 
+            Set<Integer> couldGetItemFile) throws IOException, SQLException
     {
         out.println("<ul>");
         
@@ -95,24 +103,32 @@
             if(cloudComExist.contains(obj[i].getID()))
                 out.println("existCloud");
             else
-                out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
-                    obj[i].getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
+                out.println("  <a href=\"" + request.getContextPath() + 
+                        "/send-cloud/aws-s3/" + obj[i].getHandle() + "/this" + 
+                        "\">" + "sendCloudAmazon" + "</a>");
             //link to sendCloud all
-            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
-                    obj[i].getHandle() + "/all" + "\">" + "sendAllCloudAmazon" + "</a>");
+            out.println("  <a href=\"" + request.getContextPath() + 
+                    "/send-cloud/aws-s3/" + obj[i].getHandle() + "/all" + 
+                    "\">" + "sendAllCloudAmazon" + "</a>");
             //link to getCloud
-            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
-                    obj[i].getHandle() + "/this" + "\">" + "getCloudAmazon" + "</a>");
+            if(!couldGetComFile.contains(obj[i].getID()))
+                out.println("getNotNecessary");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + 
+                        "/get-cloud/aws-s3/" + obj[i].getHandle() + "/this" + 
+                        "\">" + "getCloudAmazon" + "</a>");
             //link to getCloud all
-            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
-                    obj[i].getHandle() + "/all" + "\">" + "getAllCloudAmazon" + "</a>");
+            out.println("  <a href=\"" + request.getContextPath() + 
+                    "/get-cloud/aws-s3/" + obj[i].getHandle() + "/all" + 
+                    "\">" + "getAllCloudAmazon" + "</a>");
             //if community contains sub-communities show them
             if(subObj.containsKey(obj[i].getID()))
             {
                 Community[] newObj = subObj.get(obj[i].getID());
                 showCommunities(newObj, subObj, collections, items, 
                         backupComDone, backupColDone, backupItemDone,
-                        cloudComExist, cloudColExist, cloudItemExist);
+                        cloudComExist, cloudColExist, cloudItemExist,
+                        couldGetComFile, couldGetColFile, couldGetItemFile);
             }
             //if community contains collections show them
             if(collections.containsKey(obj[i].getID()))
@@ -120,7 +136,8 @@
                 out.println("<br>");
                 showCollections(collections.get(obj[i].getID()), items, 
                         backupColDone, backupItemDone,
-                        cloudColExist, cloudItemExist);
+                        cloudColExist, cloudItemExist,
+                        couldGetColFile, couldGetItemFile);
             }
             out.println("</li>");
         }
@@ -133,7 +150,9 @@
             Set<Integer> backupColDone,
             Set<Integer> backupItemDone,
             Set<Integer> cloudColExist,
-            Set<Integer> cloudItemExist) throws IOException, SQLException
+            Set<Integer> cloudItemExist,
+            Set<Integer> couldGetColFile, 
+            Set<Integer> couldGetItemFile) throws IOException, SQLException
     {
         out.println("<ul>");
         //for all collections do:
@@ -156,20 +175,28 @@
             if(cloudColExist.contains(col[i].getID()))
                 out.println("existCloud");
             else
-                out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
-                    col[i].getHandle() + "/this" + "\">" + "sendCloudAmazon" + "</a>");
+                out.println("  <a href=\"" + request.getContextPath() + 
+                        "/send-cloud/aws-s3/" + col[i].getHandle() + "/this" + 
+                        "\">" + "sendCloudAmazon" + "</a>");
             //link to sendCloud all
-            out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
-                    col[i].getHandle() + "/all" + "\">" + "sendAllCloudAmazon" + "</a>");
+            out.println("  <a href=\"" + request.getContextPath() + 
+                    "/send-cloud/aws-s3/" + col[i].getHandle() + "/all" + 
+                    "\">" + "sendAllCloudAmazon" + "</a>");
             //link to getCloud
-            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
-                    col[i].getHandle() + "/this" + "\">" + "getCloudAmazon" + "</a>");
+            if(!couldGetColFile.contains(col[i].getID()))
+                out.println("getNotNecessary");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + 
+                        "/get-cloud/aws-s3/" + col[i].getHandle() + "/this" + 
+                        "\">" + "getCloudAmazon" + "</a>");
             //link to getCloud all
-            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
-                    col[i].getHandle() + "/all" + "\">" + "getAllCloudAmazon" + "</a>");
+            out.println("  <a href=\"" + request.getContextPath() + 
+                    "/get-cloud/aws-s3/" + col[i].getHandle() + "/all" + 
+                    "\">" + "getAllCloudAmazon" + "</a>");
             //show items if collections contais
             if(items.containsKey(col[i].getID()))
-                showItems(items.get(col[i].getID()), backupItemDone, cloudItemExist);
+                showItems(items.get(col[i].getID()), backupItemDone, 
+                        cloudItemExist, couldGetItemFile);
             out.println("</li>");
         }
         out.println("</ul>");
@@ -178,7 +205,8 @@
     //function to show the items and respective links
     void showItems(ItemIterator obj, 
             Set<Integer> backupItemDone,
-            Set<Integer> cloudItemExist) throws IOException, SQLException
+            Set<Integer> cloudItemExist,
+            Set<Integer> couldGetItemFile) throws IOException, SQLException
     {
         out.println("<ul>");
         while(obj.hasNext())
@@ -198,11 +226,16 @@
             if(cloudItemExist.contains(newObj.getID()))
                 out.println("existCloud");
             else
-                out.println("  <a href=\"" + request.getContextPath() + "/send-cloud/aws-s3/" + 
-                    newObj.getHandle() + "\">" + "sendCloudAmazon" + "</a>");
+                out.println("  <a href=\"" + request.getContextPath() + 
+                        "/send-cloud/aws-s3/" + newObj.getHandle() + "\">" + 
+                        "sendCloudAmazon" + "</a>");
             //link to getCloud
-            out.println("  <a href=\"" + request.getContextPath() + "/get-cloud/aws-s3/" + 
-                    newObj.getHandle() + "\">" + "getCloudAmazon" + "</a>");
+            if(!couldGetItemFile.contains(newObj.getID()))
+                out.println("getNotNecessary");
+            else
+                out.println("  <a href=\"" + request.getContextPath() + 
+                        "/get-cloud/aws-s3/" + newObj.getHandle() + "\">" + 
+                        "getCloudAmazon" + "</a>");
             out.println("</li>");
         }
         out.println("</ul>");
@@ -211,14 +244,13 @@
 
 <dspace:layout titlekey="jsp.admin-backup.title">
 
-    <%
-        //out.println("olá tudo bem!!! " + frase);
-        
+    <%  
         setContext(out, request);
         
         showCommunities(com, subComMap, colMap, itemMap, 
                 backupComDone, backupColDone, backupItemDone,
-                cloudComExist, cloudColExist, cloudItemExist);
+                cloudComExist, cloudColExist, cloudItemExist,
+                couldGetComFile, couldGetColFile, couldGetItemFile);
     %>           
         
     <br> <br>

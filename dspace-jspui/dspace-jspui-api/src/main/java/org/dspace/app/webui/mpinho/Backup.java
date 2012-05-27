@@ -27,11 +27,11 @@ import org.dspace.eperson.EPerson;
 /**
  * Class for Backup 
  * 
- * @author bitaites
+ * @author mpinho
  */
 public class Backup {
     
-    private String path = "/home/bitaites/Desktop/backupfiles/";
+    private String path = ConstantsMPinho.pathBackupFiles;
     
     /**
     * Return the MD5 of the file.
@@ -49,7 +49,7 @@ public class Backup {
         } 
         catch (IOException ex) 
         {
-            java.util.logging.Logger.getLogger(BackupProcess.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
     }
@@ -187,6 +187,13 @@ public class Backup {
         
         //get file name
         String pathFile = path + this.getFileNameObj(obj);
+        
+        //see if exists file 
+        boolean exists = (new File(pathFile)).exists();
+        
+        //if file exists, delete it
+        if(exists == true)
+            (new File(pathFile)).delete();
         
         File newFile = new File(pathFile);
         PackageParameters params = new PackageParameters();
@@ -653,7 +660,7 @@ public class Backup {
             }
             
         } catch (SQLException ex) {
-            Logger.getLogger(ConCloudAmazon.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Backup.class.getName()).log(Level.SEVERE, null, ex);
         }
  
         return setInfo;
