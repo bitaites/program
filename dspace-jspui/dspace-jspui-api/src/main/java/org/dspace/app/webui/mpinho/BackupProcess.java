@@ -77,6 +77,10 @@ public class BackupProcess {
     {
         //get the DSpace Object to get the filename
         DSpaceObject obj = this.getDSpaceObject(context, type_object, object_id);
+        
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return;
 
         //get the handler object
         String handler = obj.getHandle();

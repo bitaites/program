@@ -8,17 +8,13 @@
 package org.dspace.app.webui.mpinho;
 
 import java.io.File;
-import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.dspace.authorize.AuthorizeException;
 import org.dspace.content.*;
-import org.dspace.content.crosswalk.CrosswalkException;
-import org.dspace.content.packager.PackageException;
 import org.dspace.content.packager.PackageIngester;
 import org.dspace.content.packager.PackageParameters;
 import org.dspace.core.Constants;
@@ -30,7 +26,7 @@ import org.dspace.eperson.EPerson;
  *
  * @author mpinho
  */
-public class Restore {
+public class Replace {
     
     private String path = ConstantsMPinho.pathBackupFiles;
     
@@ -63,7 +59,7 @@ public class Restore {
         return obj;
     } 
     
-    private Boolean restore(Context context, int type, int ref)
+    private Boolean replace(Context context, int type, int ref)
     {
         EPerson myPerson = null;
         
@@ -84,6 +80,10 @@ public class Restore {
         //get DSpaceObject
         DSpaceObject obj = this.getDSpaceObject(context, type, ref);
         
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
+        
         Backup backup = new Backup();
         String filename = backup.getFileNameObj(obj);
         
@@ -95,7 +95,7 @@ public class Restore {
         params.setRestoreModeEnabled(true);
         params.setReplaceModeEnabled(true);
         
-        //get file to do the restore
+        //get file to do the replace
         File theFile = new File(pathFile);
         
         PackageIngester sip = (PackageIngester) PluginManager
@@ -106,63 +106,67 @@ public class Restore {
         } 
         catch (Exception ex) 
         {
-            Logger.getLogger(Restore.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Replace.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         
         // if exist delete a regist from the table modifications
         Logbackup log = new Logbackup();
         log.deleteLogTable(context, ref, type);
+        
+        // put the replace file as backup file
+        BackupProcess backupPro = new BackupProcess();
+        backupPro.updateProcessBackup(context, ref, type);
 
         return true;
     }
     
-    public Boolean restoreCommunity(Context context, Integer ref)
+    public Boolean replaceCommunity(Context context, Integer ref)
     {
-        //see if restore is necessary or possible
-        Boolean var = this.doRestore(context, ref, Constants.COMMUNITY);
+        //see if replace is necessary or possible
+        Boolean var = this.doReplace(context, ref, Constants.COMMUNITY);
         
         if(var == true)
         {
-            Boolean val = this.restore(context, Constants.COMMUNITY, ref);
+            Boolean val = this.replace(context, Constants.COMMUNITY, ref);
             return val;
         }
         else
             return false;
     }
     
-    public Boolean restoreCollection(Context context, Integer ref)
+    public Boolean replaceCollection(Context context, Integer ref)
     {
-        //see if restore is necessary or possible
-        Boolean var = this.doRestore(context, ref, Constants.COLLECTION);
+        //see if replace is necessary or possible
+        Boolean var = this.doReplace(context, ref, Constants.COLLECTION);
         
         if(var == true)
         {
-            Boolean val = this.restore(context, Constants.COLLECTION, ref);
+            Boolean val = this.replace(context, Constants.COLLECTION, ref);
             return val;
         }
         else
             return false;
     }
         
-    public Boolean restoreItem(Context context, Integer ref)
+    public Boolean replaceItem(Context context, Integer ref)
     {
-        //see if restore is necessary or possible
-        Boolean var = this.doRestore(context, ref, Constants.ITEM);
+        //see if replace is necessary or possible
+        Boolean var = this.doReplace(context, ref, Constants.ITEM);
         
         if(var == true)
         {
-            Boolean val = this.restore(context, Constants.ITEM, ref);
+            Boolean val = this.replace(context, Constants.ITEM, ref);
             return val;
         }
         else
             return false;
     }
     
-    public Boolean restoreCommunityAndChilds(Context context, Integer ref)
+    public Boolean replaceCommunityAndChilds(Context context, Integer ref)
     {
-        //restore atual community        
-        this.restoreCommunity(context, ref);
+        //replace atual community        
+        this.replaceCommunity(context, ref);
         
         Community obj;
         Community[] subCommunities;
@@ -177,31 +181,31 @@ public class Restore {
         } 
         catch (Exception ex) 
         {
-            Logger.getLogger(Restore.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Replace.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         
-        //restore all sub-communities
+        //replace all sub-communities
         if(subCommunities.length != 0)
         {
             for(int i=0; i<subCommunities.length; i++)
-                restoreCommunityAndChilds(context, subCommunities[i].getID());
+                replaceCommunityAndChilds(context, subCommunities[i].getID());
         }
         
-        //restore all collections
+        //replace all collections
         if(collections.length != 0)
         {
             for(int i=0; i<collections.length; i++)
-                restoreCollectionAndChilds(context, collections[i].getID());
+                replaceCollectionAndChilds(context, collections[i].getID());
         }
         
         return true;
     }
         
-    public Boolean restoreCollectionAndChilds(Context context, Integer ref)
+    public Boolean replaceCollectionAndChilds(Context context, Integer ref)
     {
-        //restore atual collection
-        this.restoreCollection(context, ref);
+        //replace atual collection
+        this.replaceCollection(context, ref);
         
         
         Collection obj;
@@ -215,32 +219,36 @@ public class Restore {
         } 
         catch (Exception ex) 
         {
-            Logger.getLogger(Restore.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Replace.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         
-        //restore, one by one, each item
+        //replace, one by one, each item
         try 
         {
             if(items.hasNext())
             {
                 Item newObj = items.next();
-                restoreItem(context, newObj.getID());
+                replaceItem(context, newObj.getID());
             }
         } 
         catch (Exception ex) 
         {
-            Logger.getLogger(Restore.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Replace.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         
         return true;
     }
     
-    public Boolean doRestore(Context context, int ref, int type)
+    public Boolean doReplace(Context context, int ref, int type)
     {
         //get the DSpaceObject
         DSpaceObject obj = this.getDSpaceObject(context, type, ref);
+        
+        //if Object DSpace not exist, return false
+        if(obj == null)
+            return false;
         
         Backup backup = new Backup();
         
@@ -309,54 +317,54 @@ public class Restore {
                     return false;
                 
             } catch (Exception ex) {
-                Logger.getLogger(Restore.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Replace.class.getName()).log(Level.SEVERE, null, ex);
                 return false;
             }
             
         }
     }
     
-    public Set<Integer> checkCommunitiesRestore(Context context, Community[] com)
+    public Set<Integer> checkCommunitiesReplace(Context context, Community[] com)
     {
-        //This will contain all the CommunityIDs where is possible to do restore
+        //This will contain all the CommunityIDs where is possible to do replace
         Set<Integer> setInfo = new HashSet<Integer>();
         
         //do the operation for all communities
         for(int i=0; i<com.length; i++)
         {
-            //check if is possible or necessary do a restore 
-            Boolean checkRestore = this.doRestore(context, com[i].getID(), Constants.COMMUNITY);
+            //check if is possible or necessary do a replace 
+            Boolean checkReplace = this.doReplace(context, com[i].getID(), Constants.COMMUNITY);
 
             //add the ID community to set if correct
-            if (checkRestore == true)
+            if (checkReplace == true)
                 setInfo.add(com[i].getID());     
         }
         
         return setInfo;
     }
         
-    public Set<Integer> checkCollectionsRestore(Context context, Collection[] col)
+    public Set<Integer> checkCollectionsReplace(Context context, Collection[] col)
     {
-        //This will contain all the CollectionIDs where is possible to do restore
+        //This will contain all the CollectionIDs where is possible to do replace
         Set<Integer> setInfo = new HashSet<Integer>();
         
         //do the operation for all collections
         for(int i=0; i<col.length; i++)
         {
-            //check if is possible or necessary do a restore 
-            Boolean checkRestore = this.doRestore(context, col[i].getID(), Constants.COLLECTION);
+            //check if is possible or necessary do a replace 
+            Boolean checkReplace = this.doReplace(context, col[i].getID(), Constants.COLLECTION);
 
             //add the ID community to set if correct
-            if (checkRestore == true)
+            if (checkReplace == true)
                 setInfo.add(col[i].getID());     
         }
         
         return setInfo;
     }
             
-    public Set<Integer> checkItemsRestore(Context context, ItemIterator items)
+    public Set<Integer> checkItemsReplace(Context context, ItemIterator items)
     {
-        //This will contain all the ItemsIDs where is possible to do restor
+        //This will contain all the ItemsIDs where is possible to do replace
         Set<Integer> setInfo = new HashSet<Integer>();
         
         try 
@@ -366,15 +374,15 @@ public class Restore {
             {
                 Item objItem = items.next();
                 //check the backup file exists and is correct
-                Boolean checkRestore = this.doRestore(context, objItem.getID(), Constants.ITEM);
+                Boolean checkReplace = this.doReplace(context, objItem.getID(), Constants.ITEM);
 
-                //check if is possible or necessary do a restore
-                if (checkRestore == true)
+                //check if is possible or necessary do a replace
+                if (checkReplace == true)
                     setInfo.add(objItem.getID());
             }
             
         } catch (SQLException ex) {
-            Logger.getLogger(Restore.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Replace.class.getName()).log(Level.SEVERE, null, ex);
         }
  
         return setInfo;

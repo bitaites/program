@@ -447,6 +447,10 @@ public class ConCloudAmazon {
         //get Dspace Object to the respective community
         DSpaceObject obj = this.getDSpaceObject(context, Constants.COMMUNITY, ref);
         
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
+        
         //if connection not maked
         if (establishConnection == true)
         {
@@ -517,6 +521,10 @@ public class ConCloudAmazon {
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.COMMUNITY, ref);
         
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
+        
         //if just one file to get make connection with cloud
         if (establishConnection == true)
         {
@@ -568,6 +576,10 @@ public class ConCloudAmazon {
             Boolean establishConnection)
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.COLLECTION, ref);
+        
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
         
         //if connection not maked
         if (establishConnection == true)
@@ -639,6 +651,10 @@ public class ConCloudAmazon {
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.COLLECTION, ref);
         
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
+        
         //if just one file to get make connection with cloud
         if (establishConnection == true)
         {
@@ -688,6 +704,10 @@ public class ConCloudAmazon {
             Boolean establishConnection)
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.ITEM, ref);
+        
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
         
         //if connection not maked
         if (establishConnection == true)
@@ -758,6 +778,10 @@ public class ConCloudAmazon {
                         Boolean establishConnection)
     {
         DSpaceObject obj = this.getDSpaceObject(context, Constants.ITEM, ref);
+        
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
         
         //if just one file to get make connection with cloud
         if (establishConnection == true)
@@ -1098,6 +1122,10 @@ public class ConCloudAmazon {
             
         //get the DSpaceObject
         DSpaceObject obj = this.getDSpaceObject(context, type, ref);
+        
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
 
         //see if exist a regist of a backup in the table sthandfile
         BackupProcess backupProcess= new BackupProcess();
@@ -1454,6 +1482,10 @@ public class ConCloudAmazon {
         //get the corresponding Dspace Object
         DSpaceObject obj = this.getDSpaceObject(context, type, ref);
         
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
+        
         //see if backup file exists in cloud, if not return false
         if (this.filesInCloud.containsKey(obj.getHandle()))
         {
@@ -1474,7 +1506,7 @@ public class ConCloudAmazon {
                     //get MD5 of local file
                     String md5LocalFile = backup.getMD5File(filename);
                     //get MD5 of the last file sent to cloud
-                    String md5FileSentCloud = backupPro.getSavedMD5(context, obj.getHandle());
+                    String md5FileSentCloud = backupPro.getSentMD5(context, obj.getHandle());
                     
                     //if files equal, there is no necessity to get file from cloud, then return false
                     if(md5LocalFile.compareTo(md5FileSentCloud) == 0)

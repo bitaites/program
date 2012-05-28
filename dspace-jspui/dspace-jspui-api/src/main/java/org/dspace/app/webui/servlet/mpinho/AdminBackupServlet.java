@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.dspace.app.webui.mpinho.Backup;
 import org.dspace.app.webui.mpinho.ConCloudAmazon;
-import org.dspace.app.webui.mpinho.Restore;
+import org.dspace.app.webui.mpinho.Replace;
 import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.app.webui.util.JSPManager;
 import org.dspace.content.Collection;
@@ -109,9 +109,9 @@ public class AdminBackupServlet extends DSpaceServlet
                 couldGetColFile.addAll(conCloud.checkPossibleCollectionsGet(context, collections));
             
             //see wich collectionIDs are possible to restore
-            Restore restoreData = new Restore();
+            Replace restoreData = new Replace();
             if (collections.length != 0)
-                couldDoRestoreCol.addAll(restoreData.checkCollectionsRestore(context, collections));
+                couldDoRestoreCol.addAll(restoreData.checkCollectionsReplace(context, collections));
             
             //get items
             for(int j=0; j<collections.length; j++)
@@ -134,7 +134,7 @@ public class AdminBackupServlet extends DSpaceServlet
                 
                 //see wich itemIDs are possible to restore
                 if (item.hasNext())
-                    couldDoRestoreItem.addAll(restoreData.checkItemsRestore(context, item));
+                    couldDoRestoreItem.addAll(restoreData.checkItemsReplace(context, item));
             }
             
             //get sub-communities
@@ -159,9 +159,9 @@ public class AdminBackupServlet extends DSpaceServlet
             couldGetComFile.addAll(conCloud.checkPossibleCommunitiesGet(context, allCommunities));
         
         //see wich communityIDs are possible to restore
-        Restore restoreData = new Restore();
+        Replace restoreData = new Replace();
         if (allCommunities.length != 0)
-            couldDoRestoreCom.addAll(restoreData.checkCommunitiesRestore(context, allCommunities));
+            couldDoRestoreCom.addAll(restoreData.checkCommunitiesReplace(context, allCommunities));
         
         request.setAttribute("com", communities);
         request.setAttribute("subComMap", subComMap);

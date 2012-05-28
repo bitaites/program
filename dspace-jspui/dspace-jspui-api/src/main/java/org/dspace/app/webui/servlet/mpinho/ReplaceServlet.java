@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.dspace.app.webui.mpinho.Restore;
+import org.dspace.app.webui.mpinho.Replace;
 import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.content.DSpaceObject;
 import org.dspace.core.Constants;
@@ -23,7 +23,7 @@ import org.dspace.handle.HandleManager;
  *
  * @author mpinho
  */
-public class RestoreServlet extends DSpaceServlet
+public class ReplaceServlet extends DSpaceServlet
 {
     protected void doDSGet(Context context, HttpServletRequest request,
             HttpServletResponse response) 
@@ -77,23 +77,23 @@ public class RestoreServlet extends DSpaceServlet
         //get DspaceObjet Type
         int type = dso.getType();
         //do the backup according the instructions
-        Restore act = new Restore();
+        Replace act = new Replace();
         switch(type)
         {
             case Constants.COMMUNITY:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.restoreCommunity(context, dso.getID());
+                    act.replaceCommunity(context, dso.getID());
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.restoreCommunityAndChilds(context, dso.getID());
+                    act.replaceCommunityAndChilds(context, dso.getID());
                 break;
             case Constants.COLLECTION:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.restoreCollection(context, dso.getID());
+                    act.replaceCollection(context, dso.getID());
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.restoreCollectionAndChilds(context, dso.getID());
+                    act.replaceCollectionAndChilds(context, dso.getID());
                 break;
             case Constants.ITEM:
-                act.restoreItem(context, dso.getID());
+                act.replaceItem(context, dso.getID());
                 break;
             default:
                 break;

@@ -185,6 +185,10 @@ public class Backup {
         //get DSpaceObject
         DSpaceObject obj = this.getDSpaceObject(context, type, ref);
         
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
+        
         //get file name
         String pathFile = path + this.getFileNameObj(obj);
         
@@ -515,6 +519,14 @@ public class Backup {
 
         //get the DSpaceObject
         DSpaceObject obj = this.getDSpaceObject(context, type, ref);
+        
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
+        
+        //if Object DSpace doesn't exist, return false
+        if (obj == null)
+            return false;
 
         //see if exist a regist of a backup in the table sthandfile
         BackupProcess backupProcess= new BackupProcess();
