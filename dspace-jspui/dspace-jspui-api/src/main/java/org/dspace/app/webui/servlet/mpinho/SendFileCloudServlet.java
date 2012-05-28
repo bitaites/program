@@ -1,13 +1,13 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 /**
  * The contents of this file are subject to the license and copyright
  * detailed in the LICENSE and NOTICE files at the root of the source
  * tree and available online at
  *
  * http://www.dspace.org/license/
- */
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
  */
 package org.dspace.app.webui.servlet.mpinho;
 
@@ -16,8 +16,7 @@ import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.log4j.Logger;
-import org.dspace.app.webui.mpinho.ConCloudAmazon;
+import org.dspace.app.webui.mpinho.ActualContentManagement;
 import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.content.DSpaceObject;
 import org.dspace.core.Constants;
@@ -25,11 +24,11 @@ import org.dspace.core.Context;
 import org.dspace.handle.HandleManager;
 
 /**
- * Servlet to get files from amazon cloud.  
+ * Servlet to send files to amazon cloud.  
  * 
  * @author mpinho
  */
-public class GetCloudServlet extends DSpaceServlet
+public class SendFileCloudServlet extends DSpaceServlet
 {
     
     protected void doDSGet(Context context, HttpServletRequest request,
@@ -61,7 +60,7 @@ public class GetCloudServlet extends DSpaceServlet
             handle = path.substring(firstSlash + 1, thirdSlash);
             extraPathInfo = path.substring(thirdSlash + 1);
             
-            if (server == null || handle == null)
+            if (server == null || handle == null || extraPathInfo == null)
                 return;
         }
         catch (NumberFormatException nfe)
@@ -75,30 +74,30 @@ public class GetCloudServlet extends DSpaceServlet
         //get DspaceObjet Type
         int type = dso.getType();
         //do the backup according the instructions
-        ConCloudAmazon act = new ConCloudAmazon();
+        ActualContentManagement act = new ActualContentManagement();
         switch(type)
         {
             case Constants.COMMUNITY:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.getCommunity(context, dso.getID(), true);
+                    act.sendCommunity(context, dso.getID(), true);
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.getCommunityAndChilds(context, dso.getID(), true);
+                    act.sendCommunityAndChilds(context, dso.getID(), true);
                 break;
             case Constants.COLLECTION:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.getCollection(context, dso.getID(), true);
+                    act.sendCollection(context, dso.getID(), true);
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.getCollectionAndChilds(context, dso.getID(), true);
+                    act.sendCollectionAndChilds(context, dso.getID(), true);
                 break;
             case Constants.ITEM:
-                act.getItem(context, dso.getID(), true);
+                act.sendItem(context, dso.getID(), true);
                 break;
             default:
                 break;
         }
         
-        //redirect to the view "admin-backup"
-        String originalURL = request.getContextPath() + "/admin-backup";
-        response.sendRedirect(response.encodeRedirectURL(originalURL));
+        //redirect to the view "admin-actualContent"
+        String originalURL = request.getContextPath() + "/admin-actualContent";
+        response.sendRedirect(response.encodeRedirectURL(originalURL)); 
     }
 }

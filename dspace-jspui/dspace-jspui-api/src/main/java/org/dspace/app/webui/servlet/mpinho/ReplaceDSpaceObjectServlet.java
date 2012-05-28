@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  * The contents of this file are subject to the license and copyright
  * detailed in the LICENSE and NOTICE files at the root of the source
@@ -16,8 +12,7 @@ import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.log4j.Logger;
-import org.dspace.app.webui.mpinho.Backup;
+import org.dspace.app.webui.mpinho.Replace;
 import org.dspace.app.webui.servlet.DSpaceServlet;
 import org.dspace.content.DSpaceObject;
 import org.dspace.core.Constants;
@@ -25,15 +20,11 @@ import org.dspace.core.Context;
 import org.dspace.handle.HandleManager;
 
 /**
- * Servlet to run the commands of backup. 
- * 
- * Run all the command of backup presents in the view "admin-backup"
- * 
+ *
  * @author mpinho
  */
-public class BackupServlet extends DSpaceServlet
+public class ReplaceDSpaceObjectServlet extends DSpaceServlet
 {
-    
     protected void doDSGet(Context context, HttpServletRequest request,
             HttpServletResponse response) 
             throws ServletException, IOException, SQLException
@@ -86,23 +77,23 @@ public class BackupServlet extends DSpaceServlet
         //get DspaceObjet Type
         int type = dso.getType();
         //do the backup according the instructions
-        Backup act = new Backup();
+        Replace act = new Replace();
         switch(type)
         {
             case Constants.COMMUNITY:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.exportCommunity(context, dso.getID());
+                    act.replaceCommunity(context, dso.getID());
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.exportCommunityAndChilds(context, dso.getID());
+                    act.replaceCommunityAndChilds(context, dso.getID());
                 break;
             case Constants.COLLECTION:
                 if(extraPathInfo.compareTo("this") == 0)
-                    act.exportCollection(context, dso.getID());
+                    act.replaceCollection(context, dso.getID());
                 else if(extraPathInfo.compareTo("all") == 0)
-                    act.exportCollectionAndChilds(context, dso.getID());
+                    act.replaceCollectionAndChilds(context, dso.getID());
                 break;
             case Constants.ITEM:
-                act.exportItem(context, dso.getID());
+                act.replaceItem(context, dso.getID());
                 break;
             default:
                 break;
@@ -110,7 +101,6 @@ public class BackupServlet extends DSpaceServlet
         
         //redirect to the view "admin-actualContent"
         String originalURL = request.getContextPath() + "/admin-actualContent";
-        response.sendRedirect(response.encodeRedirectURL(originalURL));  
+        response.sendRedirect(response.encodeRedirectURL(originalURL));
     }
-    
 }

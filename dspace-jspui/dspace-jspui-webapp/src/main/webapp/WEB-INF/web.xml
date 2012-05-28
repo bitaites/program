@@ -194,8 +194,8 @@
   
   <!-- Testes Bitaites -->
   <servlet>
-    <servlet-name>admin-backup</servlet-name>
-    <servlet-class>org.dspace.app.webui.servlet.mpinho.AdminBackupServlet</servlet-class>
+    <servlet-name>admin-actualContent</servlet-name>
+    <servlet-class>org.dspace.app.webui.servlet.mpinho.ActualContentServlet</servlet-class>
   </servlet>
   
   <servlet>
@@ -209,18 +209,18 @@
   </servlet>
   
   <servlet>
-    <servlet-name>restore</servlet-name>
-    <servlet-class>org.dspace.app.webui.servlet.mpinho.RestoreServlet</servlet-class>
+    <servlet-name>replace</servlet-name>
+    <servlet-class>org.dspace.app.webui.servlet.mpinho.ReplaceDSpaceObjectServlet</servlet-class>
   </servlet>
   
   <servlet>
     <servlet-name>send-cloud</servlet-name>
-    <servlet-class>org.dspace.app.webui.servlet.mpinho.SendCloudServlet</servlet-class>
+    <servlet-class>org.dspace.app.webui.servlet.mpinho.SendFileCloudServlet</servlet-class>
   </servlet>
   
   <servlet>
     <servlet-name>get-cloud</servlet-name>
-    <servlet-class>org.dspace.app.webui.servlet.mpinho.GetCloudServlet</servlet-class>
+    <servlet-class>org.dspace.app.webui.servlet.mpinho.GetFileCloudServlet</servlet-class>
   </servlet>
   <!-- -->
   
@@ -511,8 +511,8 @@
   
   <!-- Testes Bitaites -->
   <servlet-mapping>
-    <servlet-name>admin-backup</servlet-name>
-    <url-pattern>/admin-backup</url-pattern>
+    <servlet-name>admin-actualContent</servlet-name>
+    <url-pattern>/admin-actualContent</url-pattern>
   </servlet-mapping>
   
   <servlet-mapping>
@@ -526,8 +526,8 @@
   </servlet-mapping>
   
   <servlet-mapping>
-    <servlet-name>restore</servlet-name>
-    <url-pattern>/restore/*</url-pattern>
+    <servlet-name>replace</servlet-name>
+    <url-pattern>/replace/*</url-pattern>
   </servlet-mapping>
   
   <servlet-mapping>

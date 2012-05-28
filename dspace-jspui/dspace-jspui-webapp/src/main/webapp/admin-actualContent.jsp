@@ -54,12 +54,12 @@
             (Set<Integer>) request.getAttribute("couldGetColFile");
     Set<Integer> couldGetItemFile = 
             (Set<Integer>) request.getAttribute("couldGetItemFile");
-    Set<Integer> couldDoRestoreCom = 
-            (Set<Integer>) request.getAttribute("couldDoRestoreCom");
-    Set<Integer> couldDoRestoreCol = 
-            (Set<Integer>) request.getAttribute("couldDoRestoreCol");
-    Set<Integer> couldDoRestoreItem = 
-            (Set<Integer>) request.getAttribute("couldDoRestoreItem");
+    Set<Integer> couldDoReplaceCom = 
+            (Set<Integer>) request.getAttribute("couldDoReplaceCom");
+    Set<Integer> couldDoReplaceCol = 
+            (Set<Integer>) request.getAttribute("couldDoReplaceCol");
+    Set<Integer> couldDoReplaceItem = 
+            (Set<Integer>) request.getAttribute("couldDoReplaceItem");
 %>
 
 <%!
@@ -86,9 +86,9 @@
             Set<Integer> couldGetComFile, 
             Set<Integer> couldGetColFile, 
             Set<Integer> couldGetItemFile,
-            Set<Integer> couldDoRestoreCom,
-            Set<Integer> couldDoRestoreCol, 
-            Set<Integer> couldDoRestoreItem) throws IOException, SQLException
+            Set<Integer> couldDoReplaceCom,
+            Set<Integer> couldDoReplaceCol, 
+            Set<Integer> couldDoReplaceItem) throws IOException, SQLException
     {
         out.println("<ul>");
         
@@ -108,15 +108,15 @@
             //link to backup all
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     obj[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
-            //link to restore
-            if(!couldDoRestoreCom.contains(obj[i].getID()))
-                out.println("restoreNotAvailale");
+            //link to replace
+            if(!couldDoReplaceCom.contains(obj[i].getID()))
+                out.println("replaceNotAvailale");
             else
-                out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
-                    obj[i].getHandle() + "/this" + "\">" + "restore" + "</a>"); 
-            //link to restore all
-            out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
-                    obj[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
+                out.println("  <a href=\"" + request.getContextPath() + "/replace/" + 
+                    obj[i].getHandle() + "/this" + "\">" + "replace" + "</a>"); 
+            //link to replace all
+            out.println("  <a href=\"" + request.getContextPath() + "/replace/" + 
+                    obj[i].getHandle() + "/all" + "\">" + "replaceAll" + "</a>");
             //link to sendCloud
             if(cloudComExist.contains(obj[i].getID()))
                 out.println("existCloud");
@@ -147,7 +147,7 @@
                         backupComDone, backupColDone, backupItemDone,
                         cloudComExist, cloudColExist, cloudItemExist,
                         couldGetComFile, couldGetColFile, couldGetItemFile,
-                        couldDoRestoreCom, couldDoRestoreCol, couldDoRestoreItem);
+                        couldDoReplaceCom, couldDoReplaceCol, couldDoReplaceItem);
             }
             //if community contains collections show them
             if(collections.containsKey(obj[i].getID()))
@@ -157,7 +157,7 @@
                         backupColDone, backupItemDone,
                         cloudColExist, cloudItemExist,
                         couldGetColFile, couldGetItemFile,
-                        couldDoRestoreCol, couldDoRestoreItem);
+                        couldDoReplaceCol, couldDoReplaceItem);
             }
             out.println("</li>");
         }
@@ -173,8 +173,8 @@
             Set<Integer> cloudItemExist,
             Set<Integer> couldGetColFile, 
             Set<Integer> couldGetItemFile,
-            Set<Integer> couldDoRestoreCol, 
-            Set<Integer> couldDoRestoreItem) throws IOException, SQLException
+            Set<Integer> couldDoReplaceCol, 
+            Set<Integer> couldDoReplaceItem) throws IOException, SQLException
     {
         out.println("<ul>");
         //for all collections do:
@@ -193,15 +193,15 @@
             //link to backup all
             out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     col[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
-            //link to restore
-            if(!couldDoRestoreCol.contains(col[i].getID()))
-                out.println("restoreNotAvailale");
+            //link to replace
+            if(!couldDoReplaceCol.contains(col[i].getID()))
+                out.println("replaceNotAvailale");
             else
-                out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
-                    col[i].getHandle() + "/this" + "\">" + "restore" + "</a>"); 
-            //link to restore all
-            out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
-                    col[i].getHandle() + "/all" + "\">" + "backupAll" + "</a>");
+                out.println("  <a href=\"" + request.getContextPath() + "/replace/" + 
+                    col[i].getHandle() + "/this" + "\">" + "replace" + "</a>"); 
+            //link to replace all
+            out.println("  <a href=\"" + request.getContextPath() + "/replace/" + 
+                    col[i].getHandle() + "/all" + "\">" + "replaceAll" + "</a>");
             //link to sendCloud
             if(cloudColExist.contains(col[i].getID()))
                 out.println("existCloud");
@@ -227,7 +227,7 @@
             //show items if collections contais
             if(items.containsKey(col[i].getID()))
                 showItems(items.get(col[i].getID()), backupItemDone, 
-                        cloudItemExist, couldGetItemFile, couldDoRestoreItem);
+                        cloudItemExist, couldGetItemFile, couldDoReplaceItem);
             out.println("</li>");
         }
         out.println("</ul>");
@@ -238,7 +238,7 @@
             Set<Integer> backupItemDone,
             Set<Integer> cloudItemExist,
             Set<Integer> couldGetItemFile,
-            Set<Integer> couldDoRestoreItem) throws IOException, SQLException
+            Set<Integer> couldDoReplaceItem) throws IOException, SQLException
     {
         out.println("<ul>");
         while(obj.hasNext())
@@ -254,12 +254,12 @@
             else
                 out.println("  <a href=\"" + request.getContextPath() + "/backup/" + 
                     newObj.getHandle() + "/this" + "\">" + "backup" + "</a>");
-            //link to restore
-            if(!couldDoRestoreItem.contains(newObj.getID()))
-                out.println("restoreNotAvailale");
+            //link to replace
+            if(!couldDoReplaceItem.contains(newObj.getID()))
+                out.println("replaceNotAvailale");
             else
-                out.println("  <a href=\"" + request.getContextPath() + "/restore/" + 
-                    newObj.getHandle() + "/this" + "\">" + "restore" + "</a>"); 
+                out.println("  <a href=\"" + request.getContextPath() + "/replace/" + 
+                    newObj.getHandle() + "/this" + "\">" + "replace" + "</a>"); 
             //link to sendCloud
             if(cloudItemExist.contains(newObj.getID()))
                 out.println("existCloud");
@@ -289,7 +289,7 @@
                 backupComDone, backupColDone, backupItemDone,
                 cloudComExist, cloudColExist, cloudItemExist,
                 couldGetComFile, couldGetColFile, couldGetItemFile,
-                couldDoRestoreCom, couldDoRestoreCol, couldDoRestoreItem);
+                couldDoReplaceCom, couldDoReplaceCol, couldDoReplaceItem);
     %>           
         
     <br> <br>
